@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --desc: rgb(50, 50, 50);
+  --background: #ddd0c8;
+
+  --main-bg: #10172a;
+  --off: #515b6e;
+  --text-bold: #e0e8f4;
+  --text: #969eaf;
+  --tags: #38bb92;
+  --tags-color: rgb(94 234 212);
+  --tags-bg: rgb(19 78 74);
+
+  --card-transition-duration: 150ms;
+}
+
+.title {
+  color: var(--text-bold);
+  font: bold;
+  font-size: 60px;
+}
+
+.desc {
+  color: var(--desc);
+  line-height: 1.4;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "inter";
+  font-weight: 700;
+
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--text);
+}
+
+.active {
+  color: var(--text-bold);
+}

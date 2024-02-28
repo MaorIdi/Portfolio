@@ -1,0 +1,10 @@
+.navbar a {
+  all: unset;
+  cursor: pointer;
+}
+.navbar a {
+  transition: 150ms ease-in-out;
+}
+.navbar a:hover {
+  color: var(--text-bold);
+}

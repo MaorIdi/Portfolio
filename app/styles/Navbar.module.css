@@ -1,0 +1,42 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.nav_div {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(5px);
+  min-width: 250px;
+  position: fixed;
+  border-radius: 15rem;
+  top: 0;
+  left: 50%;
+  margin-top: 0.5rem;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.nav_ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_ul a,
+.nav_ul a:hover,
+.nav_ul a:visited,
+.nav_ul a:active {
+  text-decoration: none;
+  color: var(--desc);
+}
