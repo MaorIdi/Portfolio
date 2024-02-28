@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/app/styles/HomePage.module.css";
 import LeftNav from "@/app/components/LeftNav";
 import Card from "@/app/components/Card";
+
 const HomePage = () => {
   const kovachTech = `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
@@ -107,20 +108,21 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
             <div className={styles.experience}>
               <h1>Experience</h1>
               <Card
-                title="Ghost Squawk"
-                description={ghostSquawk}
+                title="Mycri Services"
+                description={kovachTech}
                 tags={[
                   "CSS",
                   "Javascript",
                   "Python",
-                  "PHP",
                   "Project Manager",
                   "Server Manager",
+                  "PHP",
                   "MySQL",
                 ]}
-                date="2021 — 2022"
-                linkTo="http://localhost/GhostSquawkV2/"
+                date="June — Sep 2023"
+                linkTo="http://localhost/Mycri-Website-main/"
               />
+
               <Card
                 title="Kovach Technologies"
                 description={kovachTech}
@@ -137,24 +139,42 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                 linkTo="http://localhost/DEFT-Analytics/"
               />
               <Card
-                title="Mycri Services"
-                description={kovachTech}
+                title="Ghost Squawk"
+                description={ghostSquawk}
                 tags={[
                   "CSS",
                   "Javascript",
                   "Python",
+                  "PHP",
                   "Project Manager",
                   "Server Manager",
-                  "PHP",
                   "MySQL",
                 ]}
-                date="June — Sep 2023"
-                linkTo="http://localhost/Mycri-Website-main/"
+                date="2021 — 2022"
+                linkTo="http://localhost/GhostSquawkV2/"
               />
             </div>
           </section>
+          <div className={styles.arrowDown}>
+            <i className="fa-thin fa-arrow-down"></i>
+          </div>
           <section id="third">
             <h1>Projects</h1>
+            <Card
+              title="Steamly"
+              description={kovachTech}
+              tags={[
+                "CSS",
+                "Javascript",
+                "Python",
+                "Project Manager",
+                "Server Manager",
+                "PHP",
+                "MySQL",
+              ]}
+              date="Oct — Dec 2023"
+              linkTo="http://localhost/steamly-main/"
+            />
           </section>
         </div>
       </div>

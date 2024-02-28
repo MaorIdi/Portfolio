@@ -96,3 +96,20 @@
 .mainImage {
   filter: drop-shadow(5px 5px 10px #000000);
 }
+
+.arrowDown {
+  animation: arrowAnimation 4s ease-in-out infinite;
+  text-align: center;
+  font-size: 32px;
+  color: var(--text-bold);
+  padding: 2rem;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+}

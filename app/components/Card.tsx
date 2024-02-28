@@ -12,20 +12,34 @@ type props = {
 
 const Card = (props: props) => {
   const [showPopUp, setShowPopUp] = useState(false);
+  const [expand, setExpand] = useState(false);
 
   const handleShowPopUp = () => {
     setShowPopUp(!showPopUp);
+  };
+  const handleExpand = () => {
+    setExpand(!expand);
   };
   return (
     <>
       {showPopUp ? (
         <>
           <div className={`${styles.popUp} ${showPopUp && styles.hide}`}>
-            <i
-              className={`fa-regular fa-x ${styles.xButton}`}
-              onClick={handleShowPopUp}
-            ></i>
-            <iframe src={props.linkTo} height="800" width="1080"></iframe>
+            <div className={styles.buttons}>
+              <i
+                className={`fa-regular fa-arrow-up-right-and-arrow-down-left-from-center ${styles.expandButton}`}
+                onClick={handleExpand}
+              ></i>
+              <i
+                className={`fa-regular fa-x ${styles.xButton}`}
+                onClick={handleShowPopUp}
+              ></i>
+            </div>
+            <iframe
+              src={props.linkTo}
+              height={!expand ? "800" : window.innerHeight - 100}
+              width={!expand ? "1100" : window.innerWidth - 100}
+            ></iframe>
           </div>
         </>
       ) : (
