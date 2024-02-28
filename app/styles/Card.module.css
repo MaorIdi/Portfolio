@@ -60,7 +60,7 @@
   min-width: fit-content;
   color: var(--tags-color);
   background-color: var(--tags-bg);
-  font-size: 14px;
+  font-size: 12px;
   padding: 5px 15px;
   border-radius: 15px;
 }
@@ -81,7 +81,8 @@
 }
 
 .popUp iframe {
-  border-radius: 15px;
+  border-radius: 0px 0px 15px 15px;
+
   transition: 1s ease;
 }
 
@@ -113,7 +114,6 @@
   gap: 0.5rem;
   justify-content: space-between;
   background-color: white;
-  transform: translateY(1.5rem);
   border-radius: 15px 15px 0px 0px;
   padding: 1rem 2rem;
 }

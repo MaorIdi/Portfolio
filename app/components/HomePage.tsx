@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@/app/styles/HomePage.module.css";
 import LeftNav from "@/app/components/LeftNav";
 import Card from "@/app/components/Card";
-
+import CustomMouse from "@/app/components/CustomMouse";
 const HomePage = () => {
   const kovachTech = `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
@@ -31,6 +31,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
         href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
       />
       <div className={styles.mainDiv}>
+        <CustomMouse />
         <div className={styles.left}>
           <div className={styles.firstLeft}>
             <h1>Maor Idi</h1>
