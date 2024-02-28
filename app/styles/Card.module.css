@@ -37,19 +37,24 @@
 
 .date {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   min-width: fit-content;
   text-transform: uppercase;
   padding-top: 5px;
+  font-weight: bold;
+  font-family: "Inter";
 }
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: none;
   gap: 0.5rem;
   text-transform: capitalize;
 }
 
 .tags p {
+  margin: 0;
   display: flex;
   align-items: center;
   min-width: fit-content;
@@ -62,4 +67,37 @@
 
 .title {
   text-transform: capitalize;
+}
+
+.popUp {
+  animation: fade-in 500ms ease-in-out;
+  position: fixed;
+  z-index: 100;
+  background: var(--main-bg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+.xButton {
+  transform: translate(-1rem, 2rem);
+  z-index: 300;
+}
+
+.xButton:hover {
+  cursor: pointer;
+}
+
+.popUp iframe {
+  border-radius: 15px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
