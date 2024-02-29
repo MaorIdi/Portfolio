@@ -17,14 +17,14 @@ const MouseGlowEffect = () => {
   }, []);
 
   const gradientStyle: any = {
-    background: `radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 80%)`,
-    filter: "blur(200px)",
+    background: `radial-gradient(circle, rgba(29, 78, 216, 0.1), transparent 80%)`,
+    filter: "blur(10px)",
     position: "fixed",
     top: mousePosition.y,
     left: mousePosition.x,
     transform: "translate(-50%, -50%)",
-    width: "800px",
-    height: "800px",
+    width: "500px",
+    height: "500px",
     borderRadius: "50%",
     pointerEvents: "none",
     zIndex: 99,

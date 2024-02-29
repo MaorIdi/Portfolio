@@ -10,7 +10,7 @@ const LeftNav = () => {
     let current: string | null = null;
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 150;
 
       if (window.scrollY >= sectionTop) {
         current = section.getAttribute("id");

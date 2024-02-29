@@ -5,13 +5,14 @@
   background: transparent;
   border-radius: 5px;
   padding: 0.5rem;
+  color: var(--text-bold);
 }
 
-.button i {
-  transition: var(--card-transition-duration);
+.arrow {
+  transition: transform var(--card-transition-duration);
 }
 
-.button:hover i {
+.button:hover .arrow {
   transform: translate(3px, -3px);
 }
 
@@ -29,7 +30,7 @@
 .popUp {
   animation: fade-in 500ms ease-in-out;
   position: fixed;
-  z-index: 100;
+  z-index: 99999;
   background: var(--main-bg);
   top: 50%;
   left: 50%;
@@ -37,8 +38,30 @@
   text-align: right;
 }
 
+body
+  > div
+  > div
+  > div.HomePage_left__kgdyz
+  > div.HomePage_secondLeft__lJxFP
+  > div:nth-child(2)
+  > ul
+  > li
+  > div
+  > iframe {
+  z-index: 999;
+  background-color: #fff;
+}
 .popUp iframe {
   border-radius: 0px 0px 15px 15px;
+}
 
-  transition: 1s ease;
+.embed {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999999;
+  background-color: #fff;
 }

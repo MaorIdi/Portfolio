@@ -12,7 +12,8 @@ const TechButton = (props: props) => {
   return (
     <>
       <button className={styles.button} onClick={() => setClicked(!clicked)}>
-        {props.title} · <i className="fa-thin fa-arrow-up-right"></i>
+        {props.title} ·{" "}
+        <i className={`fa-thin fa-arrow-up-right ${styles.arrow}`}></i>
       </button>
       {clicked ? (
         <div className={`${styles.popUp}`}>
@@ -21,11 +22,11 @@ const TechButton = (props: props) => {
             height={window.innerHeight < 800 ? window.innerHeight - 100 : 800}
             width={window.innerWidth < 800 ? window.innerWidth - 100 : 800}
           ></iframe> */}
-          <iframe
-            src="https://fileurl.com/clean-code.pdf"
-            width="500"
-            height="800"
-          ></iframe>
+          <object
+            data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
+            width="800"
+            height="500"
+          ></object>
         </div>
       ) : (
         ""

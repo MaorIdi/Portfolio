@@ -145,7 +145,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                   "MySQL",
                 ]}
                 date="July — Dec 2022"
-                linkTo="http://localhost/DEFT-Analytics/"
+                linkTo="https://20.120.7.5/"
               />
               <Card
                 title="Ghost Squawk"
