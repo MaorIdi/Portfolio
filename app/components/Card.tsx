@@ -24,7 +24,7 @@ const Card = (props: props) => {
     <>
       {showPopUp ? (
         <>
-          <div className={`${styles.popUp} ${showPopUp && styles.hide}`}>
+          <div className={`${styles.popUp}`}>
             <div className={styles.buttons}>
               <i
                 className={`fa-regular fa-arrow-up-right-and-arrow-down-left-from-center ${styles.expandButton}`}
@@ -37,8 +37,20 @@ const Card = (props: props) => {
             </div>
             <iframe
               src={props.linkTo}
-              height={!expand ? "800" : window.innerHeight - 100}
-              width={!expand ? "1100" : window.innerWidth - 100}
+              height={
+                window.innerHeight < 800
+                  ? window.innerHeight - 100
+                  : !expand
+                  ? 800
+                  : window.innerHeight - 100
+              }
+              width={
+                window.innerWidth < 1080
+                  ? window.innerWidth - 50
+                  : !expand
+                  ? 1080
+                  : window.innerWidth - 50
+              }
             ></iframe>
           </div>
         </>

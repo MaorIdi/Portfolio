@@ -32,8 +32,9 @@ body {
   min-height: 100vh;
   font-family: "inter";
   font-weight: 700;
-
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -47,4 +48,10 @@ body {
 
 .active {
   color: var(--text-bold);
+}
+
+@media only screen and (max-width: 1330px) {
+  .active {
+    color: black;
+  }
 }

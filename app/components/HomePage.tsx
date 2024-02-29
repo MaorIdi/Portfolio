@@ -3,6 +3,7 @@ import styles from "@/app/styles/HomePage.module.css";
 import LeftNav from "@/app/components/LeftNav";
 import Card from "@/app/components/Card";
 import CustomMouse from "@/app/components/CustomMouse";
+import TechButton from "@/app/components/TechButton";
 const HomePage = () => {
   const kovachTech = `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
@@ -42,6 +43,13 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
           </div>
           <div className={styles.secondLeft}>
             <LeftNav></LeftNav>
+            <div>
+              <ul>
+                <li>
+                  <TechButton title="Resume" document="externals/resume.pdf" />
+                </li>
+              </ul>
+            </div>
             <div className={styles.links}>
               <ul>
                 <li>
@@ -175,6 +183,21 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
               ]}
               date="Oct — Dec 2023"
               linkTo="http://localhost/steamly-main/"
+            />
+            <Card
+              title="Ghost Squawk v1"
+              description={kovachTech}
+              tags={[
+                "CSS",
+                "Javascript",
+                "Python",
+                "Project Manager",
+                "Server Manager",
+                "PHP",
+                "MySQL",
+              ]}
+              date="June — July 2020"
+              linkTo="http://localhost/GhostSquawk/"
             />
           </section>
         </div>

@@ -121,3 +121,15 @@
 .buttons i:hover {
   transform: scale(0.9);
 }
+
+@media only screen and (max-width: 1330px) {
+  .date {
+    display: none;
+  }
+  .buttons > .expandButton {
+    display: none;
+  }
+  .buttons {
+    justify-content: flex-end;
+  }
+}

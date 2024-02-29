@@ -1,0 +1,44 @@
+.button {
+  all: unset;
+  font-weight: 400;
+  transition: var(--card-transition-duration);
+  background: transparent;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.button i {
+  transition: var(--card-transition-duration);
+}
+
+.button:hover i {
+  transform: translate(3px, -3px);
+}
+
+.button:hover {
+  background-color: var(--main-bg);
+  filter: brightness(1.3);
+  cursor: pointer;
+  transform: translateY(-5px);
+  color: var(--tags);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+.popUp {
+  animation: fade-in 500ms ease-in-out;
+  position: fixed;
+  z-index: 100;
+  background: var(--main-bg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+.popUp iframe {
+  border-radius: 0px 0px 15px 15px;
+
+  transition: 1s ease;
+}
