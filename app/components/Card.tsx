@@ -39,7 +39,7 @@ const Card = (props: props) => {
               src={props.linkTo}
               height={
                 window.innerHeight < 1000
-                  ? window.innerHeight - 100
+                  ? window.innerHeight - 180
                   : !expand
                   ? 800
                   : window.innerHeight - 100

@@ -188,7 +188,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                 "MySQL",
               ]}
               date="Oct — Dec 2023"
-              linkTo="http://steamly.great-site.net/"
+              linkTo="https://taupe-cannoli-0dc034.netlify.app/"
             />
             <Card
               title="Ghost Squawk v1"
