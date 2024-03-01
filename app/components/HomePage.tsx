@@ -31,6 +31,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
       />
+
       <div className={styles.mainDiv}>
         <CustomMouse />
         <div className={styles.left}>
@@ -43,13 +44,18 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
           </div>
           <div className={styles.secondLeft}>
             <LeftNav></LeftNav>
-            <div>
+
+            <div className={styles.techButton}>
               <ul>
                 <li>
-                  <TechButton title="Resume" document="externals/resume.pdf" />
+                  <TechButton
+                    title="Resume"
+                    document="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
+                  />
                 </li>
               </ul>
             </div>
+
             <div className={styles.links}>
               <ul>
                 <li>
@@ -145,7 +151,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                   "MySQL",
                 ]}
                 date="July — Dec 2022"
-                linkTo="https://20.120.7.5/"
+                linkTo="https://kovach.tech/"
               />
               <Card
                 title="Ghost Squawk"

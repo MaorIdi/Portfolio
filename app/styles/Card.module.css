@@ -78,11 +78,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: right;
+  border-radius: 15px;
 }
 
 .popUp iframe {
   border-radius: 0px 0px 15px 15px;
-
   transition: 1s ease;
 }
 
@@ -123,6 +123,9 @@
 }
 
 @media only screen and (max-width: 1330px) {
+  .popUp {
+    z-index: 999;
+  }
   .date {
     display: none;
   }

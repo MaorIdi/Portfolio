@@ -38,7 +38,7 @@ const Card = (props: props) => {
             <iframe
               src={props.linkTo}
               height={
-                window.innerHeight < 800
+                window.innerHeight < 1000
                   ? window.innerHeight - 100
                   : !expand
                   ? 800
@@ -46,10 +46,10 @@ const Card = (props: props) => {
               }
               width={
                 window.innerWidth < 1080
-                  ? window.innerWidth - 50
+                  ? window.innerWidth - 25
                   : !expand
                   ? 1080
-                  : window.innerWidth - 50
+                  : window.innerWidth - 25
               }
             ></iframe>
           </div>
