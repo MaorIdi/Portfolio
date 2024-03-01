@@ -135,7 +135,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                   "MySQL",
                 ]}
                 date="June — Sep 2023"
-                linkTo="http://localhost/Mycri-Website-main/"
+                linkTo="http://mycri-services.000.pe/"
               />
 
               <Card
@@ -188,7 +188,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                 "MySQL",
               ]}
               date="Oct — Dec 2023"
-              linkTo="http://localhost/steamly-main/"
+              linkTo="http://steamly.great-site.net/"
             />
             <Card
               title="Ghost Squawk v1"
