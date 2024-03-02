@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/app/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Maor Idi | Portfolio",
@@ -14,10 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        {/* <Navbar></Navbar> */}
-        <div className="container">{children}</div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

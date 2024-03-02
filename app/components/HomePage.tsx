@@ -31,7 +31,6 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
       />
-
       <div className={styles.mainDiv}>
         <CustomMouse />
         <div className={styles.left}>
