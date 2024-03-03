@@ -13,10 +13,6 @@
 
   --card-transition-duration: 150ms;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
 .title {
   color: var(--text-bold);
   font: bold;
@@ -28,6 +24,17 @@
   line-height: 1.4;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  animation: fade-in 1s ease-in;
+}
 html,
 body {
   margin: 0;

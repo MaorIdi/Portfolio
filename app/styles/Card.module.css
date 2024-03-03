@@ -23,6 +23,7 @@
   font-size: 16px;
   transition: transform var(--card-transition-duration) ease-in-out;
 }
+
 .outer:hover i {
   transform: translate(3px, -3px);
 }

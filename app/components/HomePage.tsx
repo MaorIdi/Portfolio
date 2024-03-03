@@ -121,7 +121,8 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
           <section id="second">
             <div className={styles.experience}>
               <h1>Experience</h1>
-              <Card
+
+              {/* <Card
                 title="Mycri Services"
                 description={kovachTech}
                 tags={[
@@ -135,7 +136,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                 ]}
                 date="June — Sep 2023"
                 linkTo="http://mycri-services.000.pe/"
-              />
+              /> */}
 
               <Card
                 title="Kovach Technologies"
@@ -165,7 +166,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                   "MySQL",
                 ]}
                 date="2021 — 2022"
-                linkTo="http://localhost/GhostSquawkV2/"
+                linkTo="https://ghost-squawk.000webhostapp.com/"
               />
             </div>
           </section>
@@ -202,7 +203,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                 "MySQL",
               ]}
               date="June — July 2020"
-              linkTo="http://localhost/GhostSquawk/"
+              linkTo="https://ghost-squawk-v1.000webhostapp.com/"
             />
           </section>
         </div>

@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "@/app/styles/Card.module.css";
 import { useState } from "react";
+import { motion } from "framer-motion";
 type props = {
   title: string;
   description: string;
@@ -20,6 +21,11 @@ const Card = (props: props) => {
   const handleExpand = () => {
     setExpand(!expand);
   };
+
+  useEffect(() => {
+    console.log(window.innerWidth);
+  }, []);
+
   return (
     <>
       {showPopUp ? (
@@ -36,20 +42,21 @@ const Card = (props: props) => {
               ></i>
             </div>
             <iframe
+              sandbox="allow-same-origin allow-scripts"
               src={props.linkTo}
               height={
-                window.innerHeight < 1000
+                window.innerWidth < 1330
                   ? window.innerHeight - 180
                   : !expand
                   ? 800
                   : window.innerHeight - 100
               }
               width={
-                window.innerWidth < 1080
+                window.innerWidth < 1330
                   ? window.innerWidth - 25
                   : !expand
-                  ? 1080
-                  : window.innerWidth - 25
+                  ? 1330
+                  : window.innerWidth - 100
               }
             ></iframe>
           </div>
@@ -57,24 +64,35 @@ const Card = (props: props) => {
       ) : (
         ""
       )}
-      <div className={styles.outer} onClick={handleShowPopUp}>
-        <p className={styles.date}>{props.date}</p>
-        <div className={styles.inner}>
-          <a className={styles.title}>
-            {props.title} · <i className="fa-thin fa-arrow-up-right"></i>
-          </a>
-          <p>{props.description}</p>
-          <div className={styles.tags}>
-            {props.tags.map(
-              (tag, index): React.ReactNode => (
-                <p key={index} className={styles.tag}>
-                  {tag}
-                </p>
-              )
-            )}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 100 },
+        }}
+      >
+        <div className={styles.outer} onClick={handleShowPopUp}>
+          <p className={styles.date}>{props.date}</p>
+          <div className={styles.inner}>
+            <a className={styles.title}>
+              {props.title} · <i className="fa-thin fa-arrow-up-right"></i>
+            </a>
+            <p>{props.description}</p>
+            <div className={styles.tags}>
+              {props.tags.map(
+                (tag, index): React.ReactNode => (
+                  <p key={index} className={styles.tag}>
+                    {tag}
+                  </p>
+                )
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
