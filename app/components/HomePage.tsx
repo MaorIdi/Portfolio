@@ -4,6 +4,8 @@ import LeftNav from "@/app/components/LeftNav";
 import Card from "@/app/components/Card";
 import CustomMouse from "@/app/components/CustomMouse";
 import TechButton from "@/app/components/TechButton";
+import ProfileImage from "@/app/components/ProfileImage";
+
 const HomePage = () => {
   const kovachTech = `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
@@ -42,8 +44,8 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
             </p>
           </div>
           <div className={styles.secondLeft}>
+            {/* <ProfileImage></ProfileImage> */}
             <LeftNav></LeftNav>
-
             <div className={styles.techButton}>
               <ul>
                 <li>
