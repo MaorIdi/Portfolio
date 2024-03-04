@@ -17,8 +17,10 @@ const TechButton = (props: props) => {
         className={styles.buttonA}
       >
         <button className={styles.button} onClick={() => setClicked(!clicked)}>
-          {props.title} ·{" "}
-          <i className={`fa-thin fa-arrow-up-right ${styles.arrow}`}></i>
+          <span>
+            {props.title} ·{" "}
+            <i className={`fa-thin fa-arrow-up-right ${styles.arrow}`}></i>
+          </span>
         </button>
       </a>
     </>

@@ -22,10 +22,6 @@ const Card = (props: props) => {
     setExpand(!expand);
   };
 
-  useEffect(() => {
-    console.log(window.innerWidth);
-  }, []);
-
   return (
     <>
       {showPopUp ? (

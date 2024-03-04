@@ -44,7 +44,7 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
             </p>
           </div>
           <div className={styles.secondLeft}>
-            {/* <ProfileImage></ProfileImage> */}
+            <ProfileImage></ProfileImage>
             <LeftNav></LeftNav>
             <div className={styles.techButton}>
               <ul>

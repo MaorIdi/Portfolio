@@ -107,7 +107,9 @@
   color: var(--text-bold);
   padding: 2rem;
 }
-
+.right h1 {
+  color: var(--text-bold);
+}
 @keyframes arrowAnimation {
   0% {
     transform: translateY(0);
