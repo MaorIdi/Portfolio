@@ -121,23 +121,6 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
           <section id="second">
             <div className={styles.experience}>
               <h1>Experience</h1>
-
-              {/* <Card
-                title="Mycri Services"
-                description={kovachTech}
-                tags={[
-                  "CSS",
-                  "Javascript",
-                  "Python",
-                  "Project Manager",
-                  "Server Manager",
-                  "PHP",
-                  "MySQL",
-                ]}
-                date="June — Sep 2023"
-                linkTo="http://mycri-services.000.pe/"
-              /> */}
-
               <Card
                 title="Kovach Technologies"
                 description={kovachTech}
