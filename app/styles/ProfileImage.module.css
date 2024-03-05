@@ -28,6 +28,7 @@
   transform: translateX(1rem);
   transform: translateY(-1.5rem);
   filter: brightness(0.9);
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 1330px) {
