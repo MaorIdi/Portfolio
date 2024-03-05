@@ -33,7 +33,7 @@
   }
 }
 .container {
-  animation: fade-in 2s ease-in;
+  animation: fade-in 1s ease-in;
 }
 html,
 body {
