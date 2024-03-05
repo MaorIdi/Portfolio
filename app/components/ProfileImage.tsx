@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/app/styles/ProfileImage.module.css";
 import Image from "next/image";
-import picture from "@/app/images/body.svg";
+import picture from "@/public/body.webp";
 
 const ProfileImage = () => {
   return (
@@ -11,9 +11,10 @@ const ProfileImage = () => {
         <Image
           className={styles.imgElement}
           src={picture}
-          alt=""
+          alt="profile picture"
           height={350}
           width={350}
+          quality={100}
           priority={true}
         ></Image>
       </div>
