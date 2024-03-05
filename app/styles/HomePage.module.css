@@ -110,6 +110,11 @@
 .right h1 {
   color: var(--text-bold);
 }
+
+.experience {
+  margin-top: 4rem;
+}
+
 @keyframes arrowAnimation {
   0% {
     transform: translateY(0);

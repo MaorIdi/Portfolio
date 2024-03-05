@@ -7,26 +7,26 @@ import TechButton from "@/app/components/TechButton";
 import ProfileImage from "@/app/components/ProfileImage";
 
 const HomePage = () => {
-  const kovachTech = `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-  `;
+  const kovachTech = `I was entrusted by one of the owners, to take charge of managing the entire system.
+Overseeing the project from inception to completion,
+I handled all aspects of programming and even played a key role in recruiting a partner
+to work alongside me, ensuring a seamless and successful project execution.`;
   const ghostSquawk = `
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-  `;
+At this project, I took on a comprehensive role overseeing various aspects of development.
+This included the maintenance of Linux servers, database management, and the development of the company&apos;s website along
+with auxiliary Python scripts. I played an important role in guiding the company through the entire programming part,
+demonstrating proficiency from concept to execution. Additionally, I led a team of two employees,
+collaborating with an individual from India and partnering with a colleague from Israel. Together,
+we successfully navigated the complexities of our projects and achieved notable milestones.`;
+
+  const ghostSquawkv1 = `
+This was the first version of GhostSquawk, this version was released at around 2020 June of 2020.
+In this project I managed all of the programming side.`;
+
+  const steamly = `
+This project was a side project of mine,
+I&apos;ve done all of the roles from writing the front-end of the website to writing the back-end of the website.`;
+
   return (
     <>
       <link
@@ -94,30 +94,25 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
           <section id="first">
             <h1>About me</h1>
             <div className={styles.description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, <span>molestiae</span> quas vel sint commodi repudiandae
-              consequuntur voluptatum laborum numquam blanditiis harum quisquam
-              eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
-              Provident similique accusantium nemo autem. Veritatis obcaecati
-              tenetur iure eius earum ut molestias architecto voluptate aliquam
-              nihil, <span>eveniet aliquid culpa officia aut!</span> Impedit sit
-              sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis
-              quas aliquid. Reprehenderit, quia. Quo neque error repudiandae
-              fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt
-              excepturi expedita sint? Sed quibusdam recusandae alias error
-              harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
-              dolorem! Officiis iure rerum voluptates a cumque velit quibusdam
-              sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur
-              fugiat, temporibus enim commodi iusto libero magni deleniti quod
-              quam consequuntur! Commodi minima excepturi repudiandae velit hic
-              maxime doloremque. Quaerat provident commodi consectetur veniam
-              similique ad earum omnis ipsum saepe, voluptas, hic voluptates
-              pariatur est explicabo fugiat, dolorum eligendi quam cupiditate
-              excepturi mollitia maiores labore suscipit quas? Nulla, placeat.
-              Voluptatem quaerat non architecto ab laudantium modi minima sunt
-              esse temporibus sint culpa, recusandae aliquam numquam totam
-              ratione voluptas quod exercitationem fuga. Possimus quis earum
-              veniam quasi aliquam eligendi, placeat qui corporis!
+              I&apos;m a tech enthusiast based in Israel. With a flair for
+              problem-solving, I&apos;ve navigated{" "}
+              <span>project management</span> and programming realms in{" "}
+              <span>freelance roles</span> at Ghost Squawk and Kovach
+              Technologies, handling everything from{" "}
+              <span>server maintenance</span> to <span>Python scripting</span>.
+              Collaborating with international teams, I led projects from start
+              to finish. In the Netherlands, with &quot;Busy with AI,&quot; I
+              delved into creating Python scripts for data extraction and
+              managing <span>Linux servers</span>. My military service showcased
+              my innovation with two streamlined proposals,{" "}
+              <span>earning praise</span> from a Brigadier General. Notably, I
+              built a closed network website featuring an automated
+              problem-solving chatbot and real-time malfunction monitoring. A
+              I&apos;m a full <span>Online</span> graduate and committed to
+              continuous learning. <br /> <br />
+              Join me in exploring the limitless possibilities of technology,
+              where every project is a chance to make a meaningful impact.
+              Let&apos;s innovate together!
             </div>
           </section>
           <br />
@@ -128,11 +123,11 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                 title="Kovach Technologies"
                 description={kovachTech}
                 tags={[
-                  "CSS",
-                  "Javascript",
-                  "Python",
                   "Project Manager",
                   "Server Manager",
+                  "HTML/CSS",
+                  "Javascript",
+                  "Python",
                   "PHP",
                   "MySQL",
                 ]}
@@ -143,12 +138,12 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
                 title="Ghost Squawk"
                 description={ghostSquawk}
                 tags={[
-                  "CSS",
+                  "Project Manager",
+                  "Server Manager",
+                  "HTML/CSS",
                   "Javascript",
                   "Python",
                   "PHP",
-                  "Project Manager",
-                  "Server Manager",
                   "MySQL",
                 ]}
                 date="2021 — 2022"
@@ -163,28 +158,26 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
             <h1>Projects</h1>
             <Card
               title="Steamly"
-              description={kovachTech}
+              description={steamly}
               tags={[
-                "CSS",
+                "HTML/CSS",
                 "Javascript",
-                "Python",
-                "Project Manager",
-                "Server Manager",
-                "PHP",
+                "Node.js",
                 "MySQL",
+                "Linux server",
               ]}
               date="Oct — Dec 2023"
               linkTo="https://taupe-cannoli-0dc034.netlify.app/"
             />
             <Card
               title="Ghost Squawk v1"
-              description={kovachTech}
+              description={ghostSquawkv1}
               tags={[
-                "CSS",
-                "Javascript",
-                "Python",
                 "Project Manager",
                 "Server Manager",
+                "HTML/CSS",
+                "Javascript",
+                "Python",
                 "PHP",
                 "MySQL",
               ]}

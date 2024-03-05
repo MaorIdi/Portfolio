@@ -1,6 +1,5 @@
 .outer {
   display: flex;
-  gap: 1rem;
   transition: var(--card-transition-duration) ease-in-out;
   padding: 1rem;
   align-items: flex-start;
@@ -44,14 +43,16 @@
   padding-top: 5px;
   font-weight: bold;
   font-family: "Inter";
+  flex: 20%;
 }
-
+.inner {
+  flex: 80%;
+}
 .tags {
   display: flex;
   flex-wrap: wrap;
   row-gap: none;
   gap: 0.5rem;
-  text-transform: capitalize;
 }
 
 .tags p {
