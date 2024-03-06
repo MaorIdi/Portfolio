@@ -13,7 +13,7 @@ I handled all aspects of programming and even played a key role in recruiting a 
 to work alongside me, ensuring a seamless and successful project execution.`;
   const ghostSquawk = `
 At this project, I took on a comprehensive role overseeing various aspects of development.
-This included the maintenance of Linux servers, database management, and the development of the company&apos;s website along
+This included the maintenance of Linux servers, database management, and the development of the company's website along
 with auxiliary Python scripts. I played an important role in guiding the company through the entire programming part,
 demonstrating proficiency from concept to execution. Additionally, I led a team of two employees,
 collaborating with an individual from India and partnering with a colleague from Israel. Together,
@@ -25,7 +25,7 @@ In this project I managed all of the programming side.`;
 
   const steamly = `
 This project was a side project of mine,
-I&apos;ve done all of the roles from writing the front-end of the website to writing the back-end of the website.`;
+I've done all of the roles from writing the front-end of the website to writing the back-end of the website.`;
 
   return (
     <>
