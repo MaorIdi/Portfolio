@@ -1,8 +1,25 @@
 .outer {
-  display: flex;
   transition: var(--card-transition-duration) ease-in-out;
   padding: 1rem;
-  align-items: flex-start;
+  gap: 0.5rem;
+  display: flex;
+}
+
+.date {
+  margin: 0;
+  font-size: 12px;
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-weight: bold;
+  font-family: "Inter";
+  display: inline-block;
+  flex: 30%;
+}
+
+.inner {
+  display: block;
+  flex: 100%;
 }
 
 .outer:hover {
@@ -35,19 +52,6 @@
   color: var(--tags);
 }
 
-.date {
-  margin: 0;
-  font-size: 12px;
-  min-width: fit-content;
-  text-transform: uppercase;
-  padding-top: 5px;
-  font-weight: bold;
-  font-family: "Inter";
-  flex: 20%;
-}
-.inner {
-  flex: 80%;
-}
 .tags {
   display: flex;
   flex-wrap: wrap;
