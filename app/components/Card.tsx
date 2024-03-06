@@ -23,6 +23,10 @@ const Card = (props: props) => {
   };
   const [loading, setLoading] = useState(true);
 
+  const handleSetLoading = () => {
+    setLoading(false);
+  };
+
   return (
     <>
       {showPopUp ? (
@@ -48,7 +52,7 @@ const Card = (props: props) => {
               <></>
             )}
             <iframe
-              onLoad={() => setLoading(false)}
+              onLoad={handleSetLoading}
               sandbox="allow-same-origin allow-scripts"
               src={props.linkTo}
               height={

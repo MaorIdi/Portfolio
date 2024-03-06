@@ -183,7 +183,7 @@ I've done all of the roles from writing the front-end of the website to writing 
               linkTo="https://ghost-squawk-v1.000webhostapp.com/"
             />
             <Card
-              title="Ghost Squawk v1"
+              title="Another one"
               description={ghostSquawkv1}
               tags={[
                 "Project Manager",
@@ -194,7 +194,7 @@ I've done all of the roles from writing the front-end of the website to writing 
                 "PHP",
                 "MySQL",
               ]}
-              date="June — July 2020"
+              date="Jan — Feb 2019"
               linkTo="https://ghost-squawk-v1.000webhostapp.com/"
             />
           </section>
