@@ -21,6 +21,7 @@ const Card = (props: props) => {
   const handleExpand = () => {
     setExpand(!expand);
   };
+  const [loading, setLoading] = useState(true);
 
   return (
     <>
@@ -37,7 +38,17 @@ const Card = (props: props) => {
                 onClick={handleShowPopUp}
               ></i>
             </div>
+            {loading ? (
+              <div className={styles.loadingBg}>
+                <div className={styles.donutContainer}>
+                  <div className={styles.donut}></div>
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
             <iframe
+              onLoad={() => setLoading(false)}
               sandbox="allow-same-origin allow-scripts"
               src={props.linkTo}
               height={

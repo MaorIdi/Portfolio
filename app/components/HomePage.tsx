@@ -45,17 +45,15 @@ I've done all of the roles from writing the front-end of the website to writing 
             </p>
           </div>
           <div className={styles.secondLeft}>
-            <ProfileImage></ProfileImage>
+            <div className={styles.profileImage}>
+              <ProfileImage></ProfileImage>
+            </div>
             <LeftNav></LeftNav>
             <div className={styles.techButton}>
-              <ul>
-                <li>
-                  <TechButton
-                    title="Resume"
-                    document="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
-                  />
-                </li>
-              </ul>
+              <TechButton
+                title="Resume"
+                document="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
+              />
             </div>
 
             <div className={styles.links}>
@@ -91,7 +89,7 @@ I've done all of the roles from writing the front-end of the website to writing 
           </div>
         </div>
         <div className={styles.right}>
-          <section id="first">
+          <section className={styles.section} id="first">
             <h1>About me</h1>
             <div className={styles.description}>
               I&apos;m a tech enthusiast based in Israel. With a flair for
@@ -107,7 +105,7 @@ I've done all of the roles from writing the front-end of the website to writing 
               my innovation with two streamlined proposals,{" "}
               <span>earning praise</span> from a Brigadier General. Notably, I
               built a closed network website featuring an automated
-              problem-solving chatbot and real-time malfunction monitoring. A
+              problem-solving chatbot and real-time malfunction monitoring.
               I&apos;m a full <span>Online</span> graduate and committed to
               continuous learning. <br /> <br />
               Join me in exploring the limitless possibilities of technology,
@@ -116,7 +114,7 @@ I've done all of the roles from writing the front-end of the website to writing 
             </div>
           </section>
           <br />
-          <section id="second">
+          <section className={styles.section} id="second">
             <div className={styles.experience}>
               <h1>Experience</h1>
               <Card
@@ -154,7 +152,7 @@ I've done all of the roles from writing the front-end of the website to writing 
           <div className={styles.arrowDown}>
             <i className="fa-thin fa-arrow-down"></i>
           </div>
-          <section id="third">
+          <section className={styles.section} id="third">
             <h1>Projects</h1>
             <Card
               title="Steamly"
@@ -168,6 +166,21 @@ I've done all of the roles from writing the front-end of the website to writing 
               ]}
               date="Oct — Dec 2023"
               linkTo="https://taupe-cannoli-0dc034.netlify.app/"
+            />
+            <Card
+              title="Ghost Squawk v1"
+              description={ghostSquawkv1}
+              tags={[
+                "Project Manager",
+                "Server Manager",
+                "HTML/CSS",
+                "Javascript",
+                "Python",
+                "PHP",
+                "MySQL",
+              ]}
+              date="June — July 2020"
+              linkTo="https://ghost-squawk-v1.000webhostapp.com/"
             />
             <Card
               title="Ghost Squawk v1"
