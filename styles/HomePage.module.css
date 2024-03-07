@@ -1,12 +1,18 @@
 @keyframes arrowAnimation {
   0% {
-    transform: translateY(0);
+    transform: var(--arrow-transfromY);
   }
   50% {
     transform: translateY(2rem);
   }
 }
 
+.section {
+  margin-bottom: 4rem;
+}
+.projects {
+  margin-top: 4rem;
+}
 .mainDiv {
   height: 200vh;
   margin-left: 15rem;
@@ -110,6 +116,7 @@
 }
 
 .arrowDown {
+  transform: var(--arrow-transfromY);
   animation: arrowAnimation 4s ease-in-out infinite;
   text-align: center;
   font-size: 32px;

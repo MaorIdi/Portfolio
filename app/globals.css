@@ -9,7 +9,7 @@
   --tags: #38bb92;
   --tags-color: rgb(94 234 212);
   --tags-bg: rgb(19 78 74);
-
+  --arrow-transfromY: translateY(0);
   --card-transition-duration: 150ms;
 }
 .title {

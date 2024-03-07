@@ -136,10 +136,15 @@ const HomePage = () => {
               />
             </div>
           </section>
-          <div className={styles.arrowDown}>
-            <i className="fa-thin fa-arrow-down"></i>
-          </div>
-          <section className={styles.section} id="third">
+          <section>
+            <div className={styles.arrowDown}>
+              <i className="fa-thin fa-arrow-down"></i>
+            </div>
+          </section>
+          <section
+            className={`${styles.section} ${styles.projects}`}
+            id="third"
+          >
             <h1>Projects</h1>
             <Card
               title="Steamly"
