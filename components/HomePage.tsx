@@ -175,11 +175,11 @@ const HomePage = () => {
               linkTo="https://ghost-squawk-v1.000webhostapp.com/"
             />
             <Card
-              title="Another Project"
+              title="Spotify Cheap"
               description={CardsContent.ghostSquawkv1}
-              tags={["Linux", "Python", "MySQL"]}
+              tags={["Next.js", "HTML/CSS", "MySQL", "API", "Javascript"]}
               date="June — July 2020"
-              linkTo="https://ghost-squawk-v1.000webhostapp.com/"
+              linkTo="https://startling-hotteok-7caad7.netlify.app/"
             />
           </section>
         </div>
