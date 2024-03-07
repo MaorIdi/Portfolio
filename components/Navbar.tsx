@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import styles from "@/app/styles/Navbar.module.css";
-import profilePic from "@/app/images/profilePic.png";
+import styles from "@/styles/Navbar.module.css";
+import profilePic from "@/images/profilePic.png";
 import Image from "next/image";
 const Navbar = () => {
   return (

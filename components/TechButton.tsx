@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "@/app/styles/TechButton.module.css";
+import styles from "@/styles/TechButton.module.css";
 type props = {
   title: string;
   document: string;

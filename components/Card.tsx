@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import styles from "@/app/styles/Card.module.css";
+import styles from "@/styles/Card.module.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 type props = {

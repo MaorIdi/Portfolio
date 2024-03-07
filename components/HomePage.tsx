@@ -1,32 +1,12 @@
 import React from "react";
-import styles from "@/app/styles/HomePage.module.css";
-import LeftNav from "@/app/components/LeftNav";
-import Card from "@/app/components/Card";
-import CustomMouse from "@/app/components/CustomMouse";
-import TechButton from "@/app/components/TechButton";
-import ProfileImage from "@/app/components/ProfileImage";
-
+import styles from "@/styles/HomePage.module.css";
+import LeftNav from "@/components/LeftNav";
+import Card from "@/components/Card";
+import CustomMouse from "@/components/CustomMouse";
+import TechButton from "@/components/TechButton";
+import ProfileImage from "@/components/ProfileImage";
+import { CardsContent } from "@/utils/CardsContent";
 const HomePage = () => {
-  const kovachTech = `I was entrusted by one of the owners, to take charge of managing the entire system.
-Overseeing the project from inception to completion,
-I handled all aspects of programming and even played a key role in recruiting a partner
-to work alongside me, ensuring a seamless and successful project execution.`;
-  const ghostSquawk = `
-At this project, I took on a comprehensive role overseeing various aspects of development.
-This included the maintenance of Linux servers, database management, and the development of the company's website along
-with auxiliary Python scripts. I played an important role in guiding the company through the entire programming part,
-demonstrating proficiency from concept to execution. Additionally, I led a team of two employees,
-collaborating with an individual from India and partnering with a colleague from Israel. Together,
-we successfully navigated the complexities of our projects and achieved notable milestones.`;
-
-  const ghostSquawkv1 = `
-This was the first version of GhostSquawk, this version was released at around 2020 June of 2020.
-In this project I managed all of the programming side.`;
-
-  const steamly = `
-This project was a side project of mine,
-I've done all of the roles from writing the front-end of the website to writing the back-end of the website.`;
-
   return (
     <>
       <link
@@ -119,7 +99,7 @@ I've done all of the roles from writing the front-end of the website to writing 
               <h1>Experience</h1>
               <Card
                 title="Kovach Technologies"
-                description={kovachTech}
+                description={CardsContent.kovachTech}
                 tags={[
                   "Project Manager",
                   "Server Manager",
@@ -134,7 +114,7 @@ I've done all of the roles from writing the front-end of the website to writing 
               />
               <Card
                 title="Ghost Squawk"
-                description={ghostSquawk}
+                description={CardsContent.ghostSquawk}
                 tags={[
                   "Project Manager",
                   "Server Manager",
@@ -147,6 +127,13 @@ I've done all of the roles from writing the front-end of the website to writing 
                 date="2021 — 2022"
                 linkTo="https://ghost-squawk.000webhostapp.com/"
               />
+              <Card
+                title="Busy With Ai"
+                description={CardsContent.busyWithAi}
+                tags={["Server Manager", "Python", "MySQL", "Excel"]}
+                date="Jan — Feb 2024"
+                linkTo="https://www.busywith.ai/"
+              />
             </div>
           </section>
           <div className={styles.arrowDown}>
@@ -156,7 +143,7 @@ I've done all of the roles from writing the front-end of the website to writing 
             <h1>Projects</h1>
             <Card
               title="Steamly"
-              description={steamly}
+              description={CardsContent.steamly}
               tags={[
                 "HTML/CSS",
                 "Javascript",
@@ -169,7 +156,7 @@ I've done all of the roles from writing the front-end of the website to writing 
             />
             <Card
               title="Ghost Squawk v1"
-              description={ghostSquawkv1}
+              description={CardsContent.ghostSquawkv1}
               tags={[
                 "Project Manager",
                 "Server Manager",
@@ -183,18 +170,10 @@ I've done all of the roles from writing the front-end of the website to writing 
               linkTo="https://ghost-squawk-v1.000webhostapp.com/"
             />
             <Card
-              title="Another one"
-              description={ghostSquawkv1}
-              tags={[
-                "Project Manager",
-                "Server Manager",
-                "HTML/CSS",
-                "Javascript",
-                "Python",
-                "PHP",
-                "MySQL",
-              ]}
-              date="Jan — Feb 2019"
+              title="Another Project"
+              description={CardsContent.ghostSquawkv1}
+              tags={["Linux", "Python", "MySQL"]}
+              date="June — July 2020"
               linkTo="https://ghost-squawk-v1.000webhostapp.com/"
             />
           </section>

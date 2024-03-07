@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import styles from "@/app/styles/LeftNav.module.css";
+import styles from "@/styles/LeftNav.module.css";
 import Link from "next/link";
 const LeftNav = () => {
   const [activeSection, setActiveSection] = useState("first");

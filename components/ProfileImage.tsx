@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "@/app/styles/ProfileImage.module.css";
+import styles from "@/styles/ProfileImage.module.css";
 import Image from "next/image";
 import picture from "@/public/body.webp";
 
