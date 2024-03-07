@@ -4,6 +4,7 @@ export interface CardsContent {
   ghostSquawk: string;
   ghostSquawkv1: string;
   steamly: string;
+  cheapSpotify: string;
 }
 
 export const CardsContent: CardsContent = {
@@ -41,4 +42,5 @@ export const CardsContent: CardsContent = {
   busyWithAi: `In Busy With Ai my role was to write Python scripts that will gather information about the
   
     customers of the projects and create leads for the owner.`,
+  cheapSpotify: `Just a side project of mine built in Next.js`,
 };

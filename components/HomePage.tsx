@@ -176,7 +176,7 @@ const HomePage = () => {
             />
             <Card
               title="Spotify Cheap"
-              description={CardsContent.ghostSquawkv1}
+              description={CardsContent.cheapSpotify}
               tags={["Next.js", "HTML/CSS", "MySQL", "API", "Javascript"]}
               date="June — July 2020"
               linkTo="https://startling-hotteok-7caad7.netlify.app/"
