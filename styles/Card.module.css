@@ -164,8 +164,8 @@
   .popUp {
     z-index: 999;
   }
-  .date {
-    display: none;
+  .outer {
+    flex-direction: column;
   }
   .buttons > .expandButton {
     display: none;
