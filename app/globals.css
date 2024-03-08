@@ -31,27 +31,21 @@
     opacity: 1;
   }
 }
-.container {
-  min-height: 100vh;
-  animation: fade-in 1s ease-in;
-}
+
 html,
 body {
   margin: 0;
-  padding: 0;
+  height: 100%;
   font-family: "inter";
   font-weight: 700;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }
-html {
-  position: relative;
-  height: 100%;
-}
 body {
   background: var(--main-bg);
   color: var(--text);
+  animation: fade-in 1s ease-in;
 }
 
 .active {

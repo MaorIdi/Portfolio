@@ -11,11 +11,7 @@ const TechButton = (props: props) => {
 
   return (
     <>
-      <a
-        href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
-        target="_blank"
-        className={styles.buttonA}
-      >
+      <a href="/resume" target="_blank" className={styles.buttonA}>
         <button className={styles.button} onClick={() => setClicked(!clicked)}>
           <span>
             {props.title} ·{" "}
