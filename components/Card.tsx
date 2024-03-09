@@ -42,15 +42,7 @@ const Card = (props: props) => {
                 onClick={handleShowPopUp}
               ></i>
             </div>
-            {loading ? (
-              <div className={styles.loadingBg}>
-                <div className={styles.donutContainer}>
-                  <div className={styles.donut}></div>
-                </div>
-              </div>
-            ) : (
-              <></>
-            )}
+            {loading ? "" : <></>}
             <iframe
               onLoad={handleSetLoading}
               sandbox="allow-same-origin allow-scripts"

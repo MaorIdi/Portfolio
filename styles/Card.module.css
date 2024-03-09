@@ -5,7 +5,7 @@
   display: flex;
 }
 
-@keyframes spin {
+/* @keyframes spin {
   to {
     transform: rotate(360deg);
   }
@@ -21,6 +21,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 999;
 }
 
 .donut {
@@ -35,7 +36,7 @@
   &.multi {
     border-bottom-color: var(--text-bold);
   }
-}
+} */
 
 .date {
   margin: 0;
@@ -122,6 +123,7 @@
 .popUp iframe {
   border-radius: 0px 0px 15px 15px;
   transition: 1s ease;
+  z-index: 999;
 }
 
 @keyframes fade-in {
