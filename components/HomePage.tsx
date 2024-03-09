@@ -136,11 +136,9 @@ const HomePage = () => {
               />
             </div>
           </section>
-          <section>
-            <div className={styles.arrowDown}>
-              <i className="fa-thin fa-arrow-down"></i>
-            </div>
-          </section>
+          <div className={styles.arrowDown}>
+            <i className="fa-thin fa-arrow-down"></i>
+          </div>
           <section
             className={`${styles.section} ${styles.projects}`}
             id="third"

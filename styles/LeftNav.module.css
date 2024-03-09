@@ -1,11 +1,14 @@
-.navbar a {
+.navbar a,
+.navbar i {
   all: unset;
   cursor: pointer;
 }
-.navbar a {
+.navbar a,
+.navbar i {
   transition: 150ms ease-in-out;
 }
-.navbar a:hover {
+.navbar a:hover,
+.navbar i:hover {
   color: var(--text-bold);
 }
 @media only screen and (max-width: 1330px) {
@@ -30,7 +33,8 @@
     justify-content: space-around;
     align-items: center;
   }
-  .navbar a:hover {
+  .navbar a:hover,
+  .navbar i {
     color: inherit;
   }
 }

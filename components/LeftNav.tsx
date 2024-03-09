@@ -1,7 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "@/styles/LeftNav.module.css";
-import Link from "next/link";
+// import Link from "next/link";
+
 const LeftNav = () => {
   const [activeSection, setActiveSection] = useState("first");
 
@@ -20,6 +21,13 @@ const LeftNav = () => {
     setActiveSection(current || "first");
   };
 
+  const handleClick = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
@@ -33,13 +41,13 @@ const LeftNav = () => {
     <nav className={styles.navbar}>
       <ul>
         <li className={activeSection === "first" ? "active" : ""}>
-          <Link href="#first">ABOUT</Link>
+          <i onClick={() => handleClick("first")}>ABOUT</i>
         </li>
         <li className={activeSection === "second" ? "active" : ""}>
-          <Link href="#second">EXPERIENCE</Link>
+          <i onClick={() => handleClick("second")}>EXPERIENCE</i>
         </li>
         <li className={activeSection === "third" ? "active" : ""}>
-          <Link href="#third">PROJECTS</Link>
+          <i onClick={() => handleClick("third")}>PROJECTS</i>
         </li>
       </ul>
     </nav>
