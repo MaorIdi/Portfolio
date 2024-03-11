@@ -1,10 +1,3 @@
-.outer {
-  transition: var(--card-transition-duration) ease-in-out;
-  padding: 1rem;
-  gap: 0.5rem;
-  display: flex;
-}
-
 /* @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -38,6 +31,14 @@
   }
 } */
 
+.outer {
+  transition: var(--card-transition-duration) ease-in-out;
+  padding: 1rem;
+  gap: 0.5rem;
+  display: flex;
+  border-radius: 15px;
+}
+
 .date {
   margin: 0;
   font-size: 12px;
@@ -58,10 +59,9 @@
 .outer:hover {
   background-color: var(--main-bg);
   filter: brightness(1.1);
-  border-radius: 5px;
   cursor: pointer;
-  transform: translateY(-5px);
 }
+
 .outer a {
   transition: var(--card-transition-duration) ease-in-out;
   color: var(--text-bold);
@@ -69,7 +69,8 @@
 }
 
 .inner i {
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 14px;
   transition: transform var(--card-transition-duration) ease-in-out;
 }
 
