@@ -17,8 +17,8 @@ const MouseGlowEffect = () => {
   }, []);
 
   const gradientStyle: any = {
-    background: `radial-gradient(circle, rgba(29, 78, 216, 0.1), transparent 80%)`,
-    filter: "blur(10px)",
+    background: `radial-gradient(circle, rgba(29, 78, 216, 0.1), transparent 100%)`,
+    filter: "blur(50px)",
     position: "fixed",
     top: mousePosition.y,
     left: mousePosition.x,

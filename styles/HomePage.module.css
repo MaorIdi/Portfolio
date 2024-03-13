@@ -131,6 +131,14 @@
   margin-top: 4rem;
 }
 
+.cardContainer > * {
+  transition: filter 150ms ease-in-out;
+}
+
+.cardContainer:hover > *:not(:hover) {
+  filter: brightness(0.7);
+}
+
 @media only screen and (max-width: 1330px) {
   .left {
     position: static;

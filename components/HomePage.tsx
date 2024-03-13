@@ -6,6 +6,7 @@ import CustomMouse from "@/components/CustomMouse";
 import TechButton from "@/components/TechButton";
 import ProfileImage from "@/components/ProfileImage";
 import { CardsContent } from "@/utils/CardsContent";
+
 const HomePage = () => {
   return (
     <>
@@ -19,7 +20,7 @@ const HomePage = () => {
         <div className={styles.left}>
           <div className={styles.firstLeft}>
             <h1>Maor Idi</h1>
-            <h2>Self Taught Web Developer</h2>
+            <h2>Full-Stack Developer</h2>
             <p>
               I create perfect web-experiences, <br></br>not web-sites.
             </p>
@@ -97,43 +98,45 @@ const HomePage = () => {
           <section className={styles.section} id="second">
             <div className={styles.experience}>
               <h1>Experience</h1>
-              <Card
-                title="Kovach Technologies"
-                description={CardsContent.kovachTech}
-                tags={[
-                  "Project Manager",
-                  "Server Manager",
-                  "HTML/CSS",
-                  "Javascript",
-                  "Python",
-                  "PHP",
-                  "MySQL",
-                ]}
-                date="July — Dec 2022"
-                linkTo="https://kovach.tech/"
-              />
-              <Card
-                title="Ghost Squawk"
-                description={CardsContent.ghostSquawk}
-                tags={[
-                  "Project Manager",
-                  "Server Manager",
-                  "HTML/CSS",
-                  "Javascript",
-                  "Python",
-                  "PHP",
-                  "MySQL",
-                ]}
-                date="2021 — 2022"
-                linkTo="https://ghost-squawk.000webhostapp.com/"
-              />
-              <Card
-                title="Busy With Ai"
-                description={CardsContent.busyWithAi}
-                tags={["Server Manager", "Python", "MySQL", "Excel"]}
-                date="Jan — Feb 2024"
-                linkTo="https://www.busywith.ai/"
-              />
+              <div className={styles.cardContainer}>
+                <Card
+                  title="Kovach Technologies"
+                  description={CardsContent.kovachTech}
+                  tags={[
+                    "Project Manager",
+                    "Server Manager",
+                    "HTML/CSS",
+                    "Javascript",
+                    "Python",
+                    "PHP",
+                    "MySQL",
+                  ]}
+                  date="July — Dec 2022"
+                  linkTo="https://kovach.tech/"
+                />
+                <Card
+                  title="Ghost Squawk"
+                  description={CardsContent.ghostSquawk}
+                  tags={[
+                    "Project Manager",
+                    "Server Manager",
+                    "HTML/CSS",
+                    "Javascript",
+                    "Python",
+                    "PHP",
+                    "MySQL",
+                  ]}
+                  date="2021 — 2022"
+                  linkTo="https://ghost-squawk.000webhostapp.com/"
+                />
+                <Card
+                  title="Busy With Ai"
+                  description={CardsContent.busyWithAi}
+                  tags={["Server Manager", "Python", "MySQL", "Excel"]}
+                  date="Jan — Feb 2024"
+                  linkTo="https://www.busywith.ai/"
+                />
+              </div>
             </div>
           </section>
           <div className={styles.arrowDown}>
@@ -144,41 +147,43 @@ const HomePage = () => {
             id="third"
           >
             <h1>Projects</h1>
-            <Card
-              title="Steamly"
-              description={CardsContent.steamly}
-              tags={[
-                "HTML/CSS",
-                "Javascript",
-                "Node.js",
-                "MySQL",
-                "Linux server",
-              ]}
-              date="Oct — Dec 2023"
-              linkTo="https://taupe-cannoli-0dc034.netlify.app/"
-            />
-            <Card
-              title="Ghost Squawk v1"
-              description={CardsContent.ghostSquawkv1}
-              tags={[
-                "Project Manager",
-                "Server Manager",
-                "HTML/CSS",
-                "Javascript",
-                "Python",
-                "PHP",
-                "MySQL",
-              ]}
-              date="June — July 2020"
-              linkTo="https://ghost-squawk-v1.000webhostapp.com/"
-            />
-            <Card
-              title="Spotify Cheap"
-              description={CardsContent.cheapSpotify}
-              tags={["Next.js", "HTML/CSS", "MySQL", "API", "Javascript"]}
-              date="June — July 2020"
-              linkTo="https://startling-hotteok-7caad7.netlify.app/"
-            />
+            <div className={styles.cardContainer}>
+              <Card
+                title="Steamly"
+                description={CardsContent.steamly}
+                tags={[
+                  "HTML/CSS",
+                  "Javascript",
+                  "Node.js",
+                  "MySQL",
+                  "Linux server",
+                ]}
+                date="Oct — Dec 2023"
+                linkTo="https://taupe-cannoli-0dc034.netlify.app/"
+              />
+              <Card
+                title="Ghost Squawk v1"
+                description={CardsContent.ghostSquawkv1}
+                tags={[
+                  "Project Manager",
+                  "Server Manager",
+                  "HTML/CSS",
+                  "Javascript",
+                  "Python",
+                  "PHP",
+                  "MySQL",
+                ]}
+                date="June — July 2020"
+                linkTo="https://ghost-squawk-v1.000webhostapp.com/"
+              />
+              <Card
+                title="Spotify Cheap"
+                description={CardsContent.cheapSpotify}
+                tags={["Next.js", "HTML/CSS", "MySQL", "API", "Javascript"]}
+                date="June — July 2020"
+                linkTo="https://startling-hotteok-7caad7.netlify.app/"
+              />
+            </div>
           </section>
         </div>
       </div>
