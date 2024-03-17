@@ -9,7 +9,7 @@ type props = {
 const TechButton = (props: props) => {
   const [clicked, setClicked] = useState(false);
   const openPDF = () => {
-    window.open("resume.pdf", "_blank");
+    window.open("resume-hebrew.pdf", "_blank");
   };
 
   return (
