@@ -14,6 +14,7 @@ const ProfileImage = () => {
           alt="profile picture"
           height={350}
           width={350}
+          priority={true}
         ></Image>
       </div>
     </>
