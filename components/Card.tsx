@@ -80,9 +80,9 @@ const Card = (props: props) => {
         <div className={styles.outer} onClick={handleShowPopUp}>
           <p className={styles.date}>{props.date}</p>
           <div className={styles.inner}>
-            <a className={styles.title}>
+            <span className={styles.title}>
               {props.title} · <i className="fa-thin fa-arrow-up-right"></i>
-            </a>
+            </span>
             <p>{props.description}</p>
             <div className={styles.tags}>
               {props.tags.map(

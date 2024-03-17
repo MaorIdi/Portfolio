@@ -40,7 +40,11 @@ const HomePage = () => {
             <div className={styles.links}>
               <ul>
                 <li>
-                  <a href="https://github.com/MaorIdi" target="_blank">
+                  <a
+                    href="https://github.com/MaorIdi"
+                    aria-label="Github"
+                    target="_blank"
+                  >
                     <i className="fa-brands fa-github"></i>
                   </a>
                 </li>
@@ -48,6 +52,7 @@ const HomePage = () => {
                   <a
                     href="https://www.linkedin.com/in/maor-idi-99326b215/"
                     target="_blank"
+                    aria-label="linkedin"
                   >
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
@@ -56,12 +61,13 @@ const HomePage = () => {
                   <a
                     href="https://www.instagram.com/maoridi_sw/"
                     target="_blank"
+                    aria-label="instagram"
                   >
                     <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="" target="_blank">
+                  <a href="" target="_blank" aria-label="x-twitter">
                     <i className="fa-brands fa-x-twitter"></i>
                   </a>
                 </li>
