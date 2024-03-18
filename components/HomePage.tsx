@@ -31,10 +31,7 @@ const HomePage = () => {
             </div>
             <LeftNav></LeftNav>
             <div className={styles.techButton}>
-              <TechButton
-                title="Resume"
-                document="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
-              />
+              <TechButton title="Resume" path="/resume-english.pdf" />
             </div>
 
             <div className={styles.links}>

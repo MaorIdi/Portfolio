@@ -26,10 +26,6 @@
   filter: brightness(1.3);
 }
 
-.button:active {
-  transform: scale(0.98);
-}
-
 .buttonA {
   all: unset;
 }
