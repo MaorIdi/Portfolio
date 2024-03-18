@@ -10,10 +10,12 @@ import { CardsContent } from "@/utils/CardsContent";
 const HomePage = () => {
   return (
     <>
-      <link
+      {/* <link
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
-      />
+      /> */}
+
+      <link rel="stylesheet" href="all.css" />
 
       <div className={styles.mainDiv}>
         <CustomMouse />
