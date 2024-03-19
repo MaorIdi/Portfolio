@@ -7,10 +7,46 @@
 .navbar i {
   transition: 150ms ease-in-out;
 }
+
 .navbar a:hover,
 .navbar i:hover {
   color: var(--text-bold);
 }
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.active i {
+  transform: scale(0.9);
+}
+
+.active {
+  transition: 250ms ease-in-out;
+  color: var(--text-bold);
+  display: inline-flex;
+  align-items: center;
+}
+
+@keyframes animateLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1rem;
+  }
+}
+
+.active::before {
+  animation: animateLine 250ms ease-in-out;
+  content: "";
+  height: 2px;
+  width: 1rem;
+  background-color: var(--text-bold);
+  margin-right: 8px;
+}
+
 @media only screen and (max-width: 1330px) {
   .navbar {
     margin: 0;

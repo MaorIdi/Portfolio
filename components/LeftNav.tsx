@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import styles from "@/styles/LeftNav.module.css";
-// import Link from "next/link";
 
 const LeftNav = () => {
   const [activeSection, setActiveSection] = useState("first");
@@ -40,13 +39,13 @@ const LeftNav = () => {
   return (
     <nav className={styles.navbar}>
       <ul>
-        <li className={activeSection === "first" ? "active" : ""}>
+        <li className={activeSection === "first" ? styles.active : ""}>
           <i onClick={() => handleClick("first")}>ABOUT</i>
         </li>
-        <li className={activeSection === "second" ? "active" : ""}>
+        <li className={activeSection === "second" ? styles.active : ""}>
           <i onClick={() => handleClick("second")}>EXPERIENCE</i>
         </li>
-        <li className={activeSection === "third" ? "active" : ""}>
+        <li className={activeSection === "third" ? styles.active : ""}>
           <i onClick={() => handleClick("third")}>PROJECTS</i>
         </li>
       </ul>
