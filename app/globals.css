@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
 :root {
   --desc: rgb(50, 50, 50);
   --background: #ddd0c8;
@@ -13,6 +11,28 @@
   --arrow-transfromY: translateY(0);
   --card-transition-duration: 150ms;
 }
+
+@font-face {
+  font-family: "inter";
+  src: url("../utils/Inter-VariableFont_slnt,wght.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "inter";
+  font-weight: 700;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background: var(--main-bg);
+  color: var(--text);
+  animation: fade-in 1s ease-in;
+}
+
 .title {
   color: var(--text-bold);
   font: bold;
@@ -31,22 +51,6 @@
   to {
     opacity: 1;
   }
-}
-
-html,
-body {
-  margin: 0;
-  height: 100%;
-  font-family: "inter";
-  font-weight: 700;
-  scroll-behavior: smooth;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
-}
-body {
-  background: var(--main-bg);
-  color: var(--text);
-  animation: fade-in 1s ease-in;
 }
 
 .active {

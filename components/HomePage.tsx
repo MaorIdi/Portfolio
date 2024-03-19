@@ -10,11 +10,11 @@ import { CardsContent } from "@/utils/CardsContent";
 const HomePage = () => {
   return (
     <>
-      <link
+      {/* <link
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
-      />
-
+      /> */}
+      <link rel="stylesheet" href="fontawesome/css/all.min.css" />
       <div className={styles.mainDiv}>
         <CustomMouse />
         <div className={styles.left}>
@@ -75,6 +75,7 @@ const HomePage = () => {
         <div className={styles.right}>
           <section className={styles.section} id="first">
             <h1>About me</h1>
+
             <div className={styles.description}>
               I&apos;m a tech enthusiast based in Israel. With a flair for
               problem-solving, I&apos;ve navigated{" "}
