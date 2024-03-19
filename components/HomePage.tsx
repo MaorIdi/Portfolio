@@ -15,6 +15,7 @@ const HomePage = () => {
         href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
       /> */}
       <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+
       <div className={styles.mainDiv}>
         <CustomMouse />
         <div className={styles.left}>
