@@ -14,6 +14,8 @@ const HomePage = () => {
         rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
       /> */}
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
+      <link rel="icon" href="favicon.ico"></link>
       <link rel="stylesheet" href="fontawesome/css/all.min.css" />
 
       <div className={styles.mainDiv}>
