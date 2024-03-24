@@ -48,6 +48,9 @@ const LeftNav = () => {
         <li className={activeSection === "third" ? styles.active : ""}>
           <i onClick={() => handleClick("third")}>PROJECTS</i>
         </li>
+        {/* <li className={activeSection === "fourth" ? styles.active : ""}>
+          <i onClick={() => handleClick("fourth")}>CONTACT</i>
+        </li> */}
       </ul>
     </nav>
   );

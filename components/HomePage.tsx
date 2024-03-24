@@ -6,7 +6,7 @@ import CustomMouse from "@/components/CustomMouse";
 import TechButton from "@/components/TechButton";
 import ProfileImage from "@/components/ProfileImage";
 import { CardsContent } from "@/utils/CardsContent";
-
+import ContactForm from "@/components/ContactForm";
 const HomePage = () => {
   return (
     <>
@@ -190,6 +190,12 @@ const HomePage = () => {
               />
             </div>
           </section>
+          {/* <section
+            className={`${styles.section} ${styles.contact}`}
+            id="fourth"
+          >
+            <ContactForm></ContactForm>
+          </section> */}
         </div>
       </div>
     </>

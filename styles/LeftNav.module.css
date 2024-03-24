@@ -57,10 +57,11 @@
     height: 50px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 90%;
     z-index: 500;
     border-radius: 50px;
     font-size: 14px;
+    bottom: 1%;
   }
   .navbar > ul {
     width: 100%;

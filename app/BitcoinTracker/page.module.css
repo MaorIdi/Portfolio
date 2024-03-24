@@ -1,9 +1,0 @@
-.container {
-  height: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.showcase {
-  color: var(--text-bold);
-}
