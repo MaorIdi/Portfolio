@@ -190,12 +190,12 @@ const HomePage = () => {
               />
             </div>
           </section>
-          <section
+          {/* <section
             className={`${styles.section} ${styles.contact}`}
             id="fourth"
           >
             <ContactForm></ContactForm>
-          </section>
+          </section> */}
         </div>
       </div>
     </>
