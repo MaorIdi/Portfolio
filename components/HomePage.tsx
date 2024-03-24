@@ -17,7 +17,7 @@ const HomePage = () => {
       <link rel="stylesheet" href="fontawesome/css/all.min.css" />
 
       <div className={styles.mainDiv}>
-        {/* <CustomMouse /> */}
+        <CustomMouse />
         <div className={styles.left}>
           <div className={styles.firstLeft}>
             <h1>Maor Idi</h1>
