@@ -60,7 +60,7 @@
     z-index: 500;
     border-radius: 50px;
     font-size: 14px;
-    top: 1%;
+    bottom: 1%;
   }
   .navbar > ul {
     width: 100%;
