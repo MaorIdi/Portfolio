@@ -17,7 +17,7 @@ const LeftNav = () => {
       }
     });
 
-    setActiveSection(current || "first");
+    setActiveSection(current || "none");
   };
 
   const handleClick = (sectionId: string) => {
