@@ -9,11 +9,11 @@
 .form textarea {
   /* all: unset; */
   font-family: "inter", Arial, Helvetica, sans-serif;
-  font-size: 14px;
   resize: none;
 }
 
 .form {
+  position: absolute;
   font-family: "inter", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   filter: brightness(1.2);
   border-radius: 15px;
   padding: 5rem 0rem;
-  width: 100%;
+  width: 95%;
   align-items: center;
 }
 
@@ -33,6 +33,7 @@
 
 .form input,
 .form textarea {
+  font-size: 12px;
   border: 1px solid var(--off);
   background-color: var(--main-bg);
   color: var(--text);
@@ -75,5 +76,13 @@
 }
 
 .form button i {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.form button p {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }

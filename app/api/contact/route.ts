@@ -21,11 +21,11 @@ export async function POST(req: NextRequest, res: NextResponse) {
         from: email,
         to: "maoridi16@gmail.com",
         subject: `${name} | maoridi.com | Contact Form Submission`,
-        text: `
-                    Name: ${name}
-                    Email: ${email}
-                    Message: ${message}
-                `,
+        text: `Full Name: ${name}
+Email: ${email}
+--------------------------------
+
+${message}`,
       };
 
       // Send the email

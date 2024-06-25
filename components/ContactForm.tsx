@@ -11,7 +11,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [Gmail, setGmail] = useState("");
   const [loading, setLoading] = useState(false);
-
+  const [sent, setSent] = useState(false);
   const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -23,8 +23,11 @@ const ContactForm = () => {
     });
 
     if (response.status === 200) {
-      toast.success("Email sent successfully");
       setLoading(false);
+      setSent(true);
+      setTimeout(() => {
+        setSent(false);
+      }, 2000);
     } else {
       toast.error("Failed to send email");
     }
@@ -79,9 +82,15 @@ const ContactForm = () => {
       <div className={styles.submitDiv}>
         <button type="submit">
           {loading ? (
-            <i className="fa-duotone fa-spinner-third fa-spin"></i>
+            <p>
+              <i className="fa-duotone fa-spinner-third fa-spin"></i> Sending...
+            </p>
+          ) : sent ? (
+            <p>
+              <i className="fa-regular fa-check"></i> Sent!
+            </p>
           ) : (
-            "Sumbit"
+            "Submit"
           )}
         </button>
       </div>
