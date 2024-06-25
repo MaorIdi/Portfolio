@@ -2,15 +2,33 @@
 import React, { useState } from "react";
 import styles from "@/styles/Form.module.css";
 import { motion, useScroll } from "framer-motion";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const ContactForm = () => {
   const { scrollYProgress } = useScroll();
   const [Fname, setFname] = useState("");
   const [message, setMessage] = useState("");
   const [Gmail, setGmail] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
+  const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setLoading(true);
+    const response = await axios.post("/api/contact", {
+      name: Fname,
+      email: Gmail,
+      message: message,
+    });
+
+    if (response.status === 200) {
+      toast.success("Email sent successfully");
+      setLoading(false);
+    } else {
+      toast.error("Failed to send email");
+    }
+
     resetForm();
     console.log(Fname, message, Gmail);
   };
@@ -59,7 +77,13 @@ const ContactForm = () => {
         }}
       />
       <div className={styles.submitDiv}>
-        <button type="submit">Submit</button>
+        <button type="submit">
+          {loading ? (
+            <i className="fa-duotone fa-spinner-third fa-spin"></i>
+          ) : (
+            "Sumbit"
+          )}
+        </button>
       </div>
     </motion.form>
   );

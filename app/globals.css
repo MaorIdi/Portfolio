@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --desc: rgb(50, 50, 50);
   --background: #ddd0c8;
