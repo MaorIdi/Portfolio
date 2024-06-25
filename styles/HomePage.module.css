@@ -186,11 +186,17 @@
   .profileImage {
     display: none;
   }
+  .contact {
+    width: 100% !important ;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .contact {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   margin: 0;

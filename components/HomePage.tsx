@@ -105,6 +105,13 @@ const HomePage = () => {
               <h1>Experience</h1>
               <div className={styles.cardContainer}>
                 <Card
+                  title="Busy With Ai"
+                  description={CardsContent.busyWithAi}
+                  tags={["Server Manager", "Python", "MySQL", "Excel"]}
+                  date="Jan — Feb 2024"
+                  linkTo="https://www.busywith.ai/"
+                />
+                <Card
                   title="Kovach Technologies"
                   description={CardsContent.kovachTech}
                   tags={[
@@ -133,13 +140,6 @@ const HomePage = () => {
                   ]}
                   date="2021 — 2022"
                   linkTo="https://ghost-squawk.000webhostapp.com/"
-                />
-                <Card
-                  title="Busy With Ai"
-                  description={CardsContent.busyWithAi}
-                  tags={["Server Manager", "Python", "MySQL", "Excel"]}
-                  date="Jan — Feb 2024"
-                  linkTo="https://www.busywith.ai/"
                 />
               </div>
             </div>
@@ -181,21 +181,21 @@ const HomePage = () => {
                 date="June — July 2020"
                 linkTo="https://ghost-squawk-v1.000webhostapp.com/"
               />
-              <Card
+              {/* <Card
                 title="Spotify Cheap"
                 description={CardsContent.cheapSpotify}
                 tags={["Next.js", "HTML/CSS", "MySQL", "API", "Javascript"]}
                 date="June — July 2020"
                 linkTo="https://startling-hotteok-7caad7.netlify.app/"
-              />
+              /> */}
             </div>
           </section>
-          {/* <section
+          <section
             className={`${styles.section} ${styles.contact}`}
             id="fourth"
           >
             <ContactForm></ContactForm>
-          </section> */}
+          </section>
         </div>
       </div>
     </>

@@ -6,18 +6,18 @@ import { motion, useScroll } from "framer-motion";
 const ContactForm = () => {
   const { scrollYProgress } = useScroll();
   const [Fname, setFname] = useState("");
-  const [Lname, setLname] = useState("");
+  const [message, setMessage] = useState("");
   const [Gmail, setGmail] = useState("");
 
   const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     resetForm();
-    console.log(Fname, Lname, Gmail);
+    console.log(Fname, message, Gmail);
   };
 
   const resetForm = () => {
     setFname("");
-    setLname("");
+    setMessage("");
     setGmail("");
   };
 
@@ -29,27 +29,17 @@ const ContactForm = () => {
     >
       <h1>Contact me</h1>
       <div className={styles.formRow}>
-        <div>
-          <input
-            type="text"
-            id="Fname"
-            placeholder="First Name"
-            onChange={(e) => setFname(e.target.value)}
-            value={Fname}
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            id="Lname"
-            placeholder="Last Name"
-            onChange={(e) => setLname(e.target.value)}
-            value={Lname}
-          />
-        </div>
-      </div>
-      <div>
         <input
+          required
+          type="text"
+          id="Fname"
+          placeholder="Full Name"
+          onChange={(e) => setFname(e.target.value)}
+          value={Fname}
+        />
+
+        <input
+          required
           type="text"
           id="Gmail"
           placeholder="Email Address"
@@ -59,7 +49,18 @@ const ContactForm = () => {
           }}
         />
       </div>
-      <button type="submit">Submit</button>
+      <textarea
+        required
+        id="message"
+        placeholder="Please write down a job offer or a message here."
+        value={message}
+        onChange={(e) => {
+          setMessage(e.target.value);
+        }}
+      />
+      <div className={styles.submitDiv}>
+        <button type="submit">Submit</button>
+      </div>
     </motion.form>
   );
 };
