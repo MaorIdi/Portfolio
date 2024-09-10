@@ -123,7 +123,7 @@ const HomePage = () => {
                     "PHP",
                     "MySQL",
                   ]}
-                  date="July — Dec 2022"
+                  date="Jul — Dec 2022"
                   linkTo="https://kovach.tech/"
                 />
                 <Card
@@ -138,7 +138,7 @@ const HomePage = () => {
                     "PHP",
                     "MySQL",
                   ]}
-                  date="2021 — 2022"
+                  date="Feb — Jun 2022"
                   linkTo="https://ghost-squawk.000webhostapp.com/"
                 />
               </div>
@@ -178,7 +178,7 @@ const HomePage = () => {
                   "PHP",
                   "MySQL",
                 ]}
-                date="June — July 2020"
+                date="Jun — Jul 2020"
                 linkTo="https://ghost-squawk-v1.000webhostapp.com/"
               />
               {/* <Card
