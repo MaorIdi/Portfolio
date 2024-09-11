@@ -30,9 +30,9 @@ export const CardsContent: CardsContent = {
   we successfully navigated the complexities of our projects and achieved notable milestones.`,
 
   ghostSquawkv1: `
-  This was the first version of GhostSquawk, this version was released at around 2020 June of 2020.
-  
-  In this project I managed all of the programming side.`,
+  This project was the first real professional project of mine, I've done all of the roles from writing the front-end of 
+  the website to writing the back-end of the website.
+  `,
 
   steamly: `
   This project was a side project of mine,

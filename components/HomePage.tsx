@@ -178,7 +178,7 @@ const HomePage = () => {
                   "PHP",
                   "MySQL",
                 ]}
-                date="Jun — Jul 2020"
+                date="Jun — Jul 2021"
                 linkTo="https://ghost-squawk-v1.000webhostapp.com/"
               />
               {/* <Card
