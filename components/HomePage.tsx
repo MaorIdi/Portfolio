@@ -32,7 +32,7 @@ const HomePage = () => {
             </div>
             <LeftNav></LeftNav>
             <div className={styles.techButton}>
-              <TechButton title="Resume" path="/resume-hebrew.pdf" />
+              <TechButton title="Resume" path="/resume-english.pdf" />
             </div>
 
             <div className={styles.links}>
@@ -108,7 +108,7 @@ const HomePage = () => {
                   title="Busy With Ai"
                   description={CardsContent.busyWithAi}
                   tags={["Server Manager", "Python", "MySQL", "Excel"]}
-                  date="Jan — Feb 2024"
+                  date="Jan — Mar 2024"
                   linkTo="https://www.busywith.ai/"
                 />
                 <Card
