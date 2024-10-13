@@ -16,14 +16,14 @@ const TechButton = (props: props) => {
 
   return (
     <>
-      {/* <button className={`${styles.button}`} onClick={openPDF}>
+      <button className={`${styles.button}`} onClick={openPDF}>
         <span>
           {props.title} ·{" "}
           <i className={`fa-thin fa-arrow-up-right ${styles.arrow}`}></i>
         </span>
-      </button> */}
+      </button>
 
-      <button
+      {/* <button
         className={`${styles.button}`}
         onClick={() => setOpenResume(!openResume)}
       >
@@ -33,7 +33,7 @@ const TechButton = (props: props) => {
         </span>
       </button>
 
-      <div className={styles.resumeDiv}></div>
+      {openResume ? <div className={styles.resumeDiv}></div> : ""} */}
     </>
   );
 };
