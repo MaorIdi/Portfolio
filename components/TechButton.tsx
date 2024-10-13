@@ -12,14 +12,28 @@ const TechButton = (props: props) => {
     window.open(props.path, "_blank");
   };
 
+  const [openResume, setOpenResume] = React.useState(false);
+
   return (
     <>
-      <button className={`${styles.button}`} onClick={openPDF}>
+      {/* <button className={`${styles.button}`} onClick={openPDF}>
+        <span>
+          {props.title} ·{" "}
+          <i className={`fa-thin fa-arrow-up-right ${styles.arrow}`}></i>
+        </span>
+      </button> */}
+
+      <button
+        className={`${styles.button}`}
+        onClick={() => setOpenResume(!openResume)}
+      >
         <span>
           {props.title} ·{" "}
           <i className={`fa-thin fa-arrow-up-right ${styles.arrow}`}></i>
         </span>
       </button>
+
+      <div className={styles.resumeDiv}></div>
     </>
   );
 };
