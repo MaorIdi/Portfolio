@@ -4,26 +4,22 @@ import styles from "@/styles/TechButton.module.css";
 
 type props = {
   title: string;
-  path: string;
+  hebrewPath: string;
+  englishPath: string;
 };
 
 const TechButton = (props: props) => {
-  const openPDF = () => {
-    window.open(props.path, "_blank");
+  const openPdfHebrew = () => {
+    window.open(props.hebrewPath, "_blank");
   };
-
+  const openPdfEnglish = () => {
+    window.open(props.englishPath, "_blank");
+  };
   const [openResume, setOpenResume] = React.useState(false);
 
   return (
     <>
-      <button className={`${styles.button}`} onClick={openPDF}>
-        <span>
-          {props.title} ·{" "}
-          <i className={`fa-thin fa-arrow-up-right ${styles.arrow}`}></i>
-        </span>
-      </button>
-
-      {/* <button
+      <button
         className={`${styles.button}`}
         onClick={() => setOpenResume(!openResume)}
       >
@@ -33,7 +29,24 @@ const TechButton = (props: props) => {
         </span>
       </button>
 
-      {openResume ? <div className={styles.resumeDiv}></div> : ""} */}
+      {openResume ? (
+        <div
+          className={styles.outClick}
+          onClick={() => setOpenResume(false)}
+        ></div>
+      ) : (
+        ""
+      )}
+      {openResume ? (
+        <div className={styles.resumeDiv}>
+          <ul className={styles.resumeUl}>
+            <li onClick={openPdfHebrew}> 🇮🇱 Hebrew</li>
+            <li onClick={openPdfEnglish}> 🇺🇸 English</li>
+          </ul>
+        </div>
+      ) : (
+        ""
+      )}
     </>
   );
 };

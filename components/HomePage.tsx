@@ -32,7 +32,11 @@ const HomePage = () => {
             </div>
             <LeftNav></LeftNav>
             <div className={styles.techButton}>
-              <TechButton title="Resume" path="/resume-english.pdf" />
+              <TechButton
+                title="Resume"
+                englishPath="/resume-english.pdf"
+                hebrewPath="/resume-hebrew.pdf"
+              />
             </div>
 
             <div className={styles.links}>
