@@ -1,13 +1,28 @@
 .formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 85%;
+}
+
+.inputWrapper {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputWrapper label {
+  color: var(--text-bold);
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 0.25rem;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 
 .form textarea {
-  /* all: unset; */
   font-family: "inter", Arial, Helvetica, sans-serif;
   resize: none;
 }
@@ -17,55 +32,119 @@
   font-family: "inter", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  background-color: var(--main-bg);
-  filter: brightness(1.2);
-  border-radius: 15px;
-  padding: 5rem 0rem;
+  gap: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 23, 42, 0.95) 0%,
+    rgba(16, 23, 42, 0.98) 100%
+  );
+  border: 1px solid rgba(56, 187, 146, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 3rem 2rem;
   width: 95%;
+  max-width: 800px;
   align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 .form h1 {
   color: var(--text-bold) !important;
   text-align: center;
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
 }
 
 .form input,
 .form textarea {
-  font-size: 12px;
-  border: 1px solid var(--off);
-  background-color: var(--main-bg);
+  font-size: 14px;
+  border: 1.5px solid rgba(81, 91, 110, 0.4);
+  background-color: rgba(16, 23, 42, 0.6);
+  color: var(--text-bold);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--tags);
+  background-color: rgba(16, 23, 42, 0.8);
+  box-shadow: 0 0 0 3px rgba(56, 187, 146, 0.1);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
   color: var(--text);
-  border-radius: 10px;
+  opacity: 0.6;
 }
 
 .form input {
-  padding: 1rem;
-  width: 70%;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.form input:invalid:not(:placeholder-shown) {
+  border-color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.05);
+}
+
+.form input:invalid:not(:placeholder-shown):focus {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.form input:valid:not(:placeholder-shown) {
+  border-color: var(--tags);
 }
 
 .form textarea {
-  height: 10rem;
-  width: 80%;
-  padding: 1rem;
+  height: 12rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  line-height: 1.6;
+  font-weight: 400;
+  box-sizing: border-box;
 }
 
 .form button {
-  padding: 1rem;
-  background-color: var(--tags-bg);
+  padding: 1rem 2.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--tags-bg) 0%,
+    rgba(19, 78, 74, 0.8) 100%
+  );
   color: var(--tags-color);
-  border: none;
-  border-radius: 15px;
+  border: 1px solid rgba(56, 187, 146, 0.3);
+  border-radius: 12px;
   cursor: pointer;
-  width: 40%;
-  transition: background-color 0.3s;
-  font-weight: bold;
+  width: auto;
+  min-width: 180px;
+  transition: all 0.3s ease;
+  font-weight: 600;
   font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 12px rgba(56, 187, 146, 0.2);
 }
 
 .form button:hover {
-  background-color: var(--tags);
+  background: linear-gradient(
+    135deg,
+    var(--tags) 0%,
+    rgba(56, 187, 146, 0.9) 100%
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 187, 146, 0.3);
+  color: var(--main-bg);
+}
+
+.form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(56, 187, 146, 0.2);
 }
 
 .submitDiv {
@@ -73,6 +152,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .form button i {
@@ -85,4 +165,31 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    width: 85%;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .inputWrapper {
+    width: 100%;
+  }
+
+  .form {
+    padding: 2.5rem 1.5rem;
+    width: 90%;
+  }
+
+  .form h1 {
+    font-size: 28px;
+  }
+
+  .form button {
+    width: 100%;
+    min-width: unset;
+  }
 }

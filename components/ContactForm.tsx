@@ -50,35 +50,44 @@ const ContactForm = () => {
     >
       <h1>Contact me</h1>
       <div className={styles.formRow}>
-        <input
-          required
-          type="text"
-          id="Fname"
-          placeholder="Full Name"
-          onChange={(e) => setFname(e.target.value)}
-          value={Fname}
-        />
+        <div className={styles.inputWrapper}>
+          <label htmlFor="Fname">Full Name</label>
+          <input
+            required
+            type="text"
+            id="Fname"
+            placeholder="John Doe"
+            onChange={(e) => setFname(e.target.value)}
+            value={Fname}
+          />
+        </div>
 
-        <input
+        <div className={styles.inputWrapper}>
+          <label htmlFor="Gmail">Email Address</label>
+          <input
+            required
+            type="email"
+            id="Gmail"
+            placeholder="john@example.com"
+            value={Gmail}
+            onChange={(e) => {
+              setGmail(e.target.value);
+            }}
+          />
+        </div>
+      </div>
+      <div className={styles.inputWrapper} style={{ width: "85%" }}>
+        <label htmlFor="message">Message</label>
+        <textarea
           required
-          type="text"
-          id="Gmail"
-          placeholder="Email Address"
-          value={Gmail}
+          id="message"
+          placeholder="Please write down a job offer or a message here."
+          value={message}
           onChange={(e) => {
-            setGmail(e.target.value);
+            setMessage(e.target.value);
           }}
         />
       </div>
-      <textarea
-        required
-        id="message"
-        placeholder="Please write down a job offer or a message here."
-        value={message}
-        onChange={(e) => {
-          setMessage(e.target.value);
-        }}
-      />
       <div className={styles.submitDiv}>
         <button type="submit">
           {loading ? (
