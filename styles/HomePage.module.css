@@ -19,6 +19,8 @@
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 .description {
   line-height: 26px;

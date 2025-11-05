@@ -14,17 +14,30 @@ type props = {
 const Card = (props: props) => {
   const [showPopUp, setShowPopUp] = useState(false);
   const [expand, setExpand] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [showTimeoutMessage, setShowTimeoutMessage] = useState(false);
 
   const handleShowPopUp = () => {
     setShowPopUp(!showPopUp);
+    if (!showPopUp) {
+      setLoading(true); // Reset loading state when opening popup
+      setShowTimeoutMessage(false); // Reset timeout message
+
+      // Set timeout for 10 seconds
+      setTimeout(() => {
+        if (loading) {
+          setShowTimeoutMessage(true);
+        }
+      }, 10000);
+    }
   };
   const handleExpand = () => {
     setExpand(!expand);
   };
-  const [loading, setLoading] = useState(true);
 
   const handleSetLoading = () => {
     setLoading(false);
+    setShowTimeoutMessage(false);
   };
 
   return (
@@ -42,11 +55,26 @@ const Card = (props: props) => {
                 onClick={handleShowPopUp}
               ></i>
             </div>
-            {loading ? "" : <></>}
+            {loading && (
+              <div className={styles.loaderContainer}>
+                <div className={styles.loader}></div>
+                <p className={styles.loadingText}>Loading {props.title}...</p>
+                {showTimeoutMessage && (
+                  <div className={styles.timeoutMessage}>
+                    <i className="fa-solid fa-triangle-exclamation"></i>
+                    <p>
+                      This is taking longer than expected. There might be a
+                      hosting issue with the preview of this website.
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
             <iframe
               onLoad={handleSetLoading}
               sandbox="allow-same-origin allow-scripts"
               src={props.linkTo}
+              style={{ display: loading ? "none" : "block" }}
               height={
                 window.innerWidth < 1330
                   ? window.innerHeight - 180

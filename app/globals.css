@@ -36,6 +36,76 @@ body {
   background: var(--main-bg);
   color: var(--text);
   animation: fade-in 1s ease-in;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Futuristic lines background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  background-image: 
+    /* Vertical lines */ repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 79px,
+      rgba(56, 187, 146, 0.15) 79px,
+      rgba(56, 187, 146, 0.15) 80px
+    ),
+    /* Horizontal lines */
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 79px,
+        rgba(81, 91, 110, 0.2) 79px,
+        rgba(81, 91, 110, 0.2) 80px
+      ),
+    /* Diagonal lines */
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 119px,
+        rgba(94, 234, 212, 0.08) 119px,
+        rgba(94, 234, 212, 0.08) 120px
+      ),
+    /* Diagonal lines opposite direction */
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 119px,
+        rgba(94, 234, 212, 0.08) 119px,
+        rgba(94, 234, 212, 0.08) 120px
+      );
+  pointer-events: none;
+}
+
+/* Subtle glow effect */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.3;
+  background: radial-gradient(
+      ellipse at 10% 20%,
+      rgba(56, 187, 146, 0.1) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 90% 80%,
+      rgba(94, 234, 212, 0.08) 0%,
+      transparent 40%
+    );
+  pointer-events: none;
 }
 
 .title {

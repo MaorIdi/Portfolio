@@ -130,6 +130,77 @@
   transform: scale(0.9);
 }
 
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 3rem;
+  gap: 1.5rem;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 4px solid var(--off);
+  border-top: 4px solid var(--tags);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  color: var(--text-bold);
+  font-size: 18px;
+  margin: 0;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.timeoutMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 10px;
+  max-width: 400px;
+  animation: fade-in 500ms ease-in-out;
+}
+
+.timeoutMessage i {
+  font-size: 32px;
+  color: #ffc107;
+}
+
+.timeoutMessage p {
+  margin: 0;
+  color: var(--text-bold);
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+}
+
 @media only screen and (max-width: 1330px) {
   .popUp {
     z-index: 999;
