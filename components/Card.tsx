@@ -56,18 +56,36 @@ const Card = (props: props) => {
               ></i>
             </div>
             {loading && (
-              <div className={styles.loaderContainer}>
-                <div className={styles.loader}></div>
-                <p className={styles.loadingText}>Loading {props.title}...</p>
-                {showTimeoutMessage && (
-                  <div className={styles.timeoutMessage}>
-                    <i className="fa-solid fa-triangle-exclamation"></i>
-                    <p>
-                      This is taking longer than expected. There might be a
-                      hosting issue with the preview of this website.
-                    </p>
-                  </div>
-                )}
+              <div
+                className={styles.loaderContainer}
+                style={{
+                  height:
+                    window.innerWidth < 1330
+                      ? window.innerHeight - 180
+                      : !expand
+                      ? 800
+                      : window.innerHeight - 100,
+                  width:
+                    window.innerWidth < 1330
+                      ? window.innerWidth - 25
+                      : !expand
+                      ? 1330
+                      : window.innerWidth - 100,
+                }}
+              >
+                <div className={styles.loaderContent}>
+                  <div className={styles.loader}></div>
+                  <p className={styles.loadingText}>Loading {props.title}...</p>
+                  {showTimeoutMessage && (
+                    <div className={styles.timeoutMessage}>
+                      <i className="fa-solid fa-triangle-exclamation"></i>
+                      <p>
+                        This is taking longer than expected. There might be a
+                        hosting issue with the preview of this website.
+                      </p>
+                    </div>
+                  )}
+                </div>
               </div>
             )}
             <iframe
