@@ -76,7 +76,7 @@ const ContactForm = () => {
           />
         </div>
       </div>
-      <div className={styles.inputWrapper} style={{ width: "85%" }}>
+      <div className={`${styles.inputWrapper} ${styles.messageWrapper}`}>
         <label htmlFor="message">Message</label>
         <textarea
           required

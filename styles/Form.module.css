@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+.messageWrapper {
+  width: 85%;
+}
+
 .inputWrapper label {
   color: var(--text-bold);
   font-size: 14px;
@@ -28,7 +32,7 @@
 }
 
 .form {
-  position: absolute;
+  position: relative;
   font-family: "inter", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -42,10 +46,12 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 3rem 2rem;
-  width: 95%;
+  width: 100%;
   max-width: 800px;
   align-items: center;
   backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .form h1 {
@@ -169,27 +175,65 @@
 
 @media only screen and (max-width: 768px) {
   .formRow {
-    flex-direction: column;
-    width: 85%;
-    gap: 1rem;
-    align-items: stretch;
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 1.5rem;
   }
 
   .inputWrapper {
     width: 100%;
   }
+  
+  .messageWrapper {
+    width: 90%;
+  }
+  
+  .inputWrapper label {
+    white-space: normal;
+  }
 
   .form {
-    padding: 2.5rem 1.5rem;
-    width: 90%;
+    padding: 2rem 1.5rem;
+    width: 100%;
   }
 
   .form h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .form button {
     width: 100%;
     min-width: unset;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form {
+    padding: 2rem 1rem;
+    width: 100%;
+    gap: 1.25rem;
+  }
+  
+  .formRow {
+    width: 95%;
+    gap: 1.25rem;
+  }
+  
+  .messageWrapper {
+    width: 95%;
+  }
+  
+  .form h1 {
+    font-size: 24px;
+  }
+  
+  .form input,
+  .form textarea {
+    font-size: 16px;
+  }
+  
+  .inputWrapper label {
+    font-size: 13px;
   }
 }
