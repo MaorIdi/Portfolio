@@ -44,8 +44,8 @@ const DevOpsNav = () => {
     <nav className={styles.navbar}>
       <ul>
         {sections.map(({ id, label }) => (
-          <li key={id} className={activeSection === id ? styles.active : ""}>
-            <i onClick={() => handleClick(id)}>{label}</i>
+          <li key={id} className={activeSection === id ? styles.active : ""} onClick={() => handleClick(id)}>
+            <i>{label}</i>
           </li>
         ))}
       </ul>

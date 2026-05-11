@@ -1,29 +1,41 @@
 .button {
   all: unset;
-  font-weight: 400;
-  transition: var(--card-transition-duration);
-  background: transparent;
-  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border: 1px solid rgba(56, 187, 146, 0.35);
+  border-radius: 50px;
+  background: rgba(56, 187, 146, 0.05);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
   color: var(--text-bold);
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease, transform 150ms ease, color 150ms ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .arrow {
-  transition: transform var(--card-transition-duration);
+  transition: transform 150ms ease;
+}
+
+.button:hover {
+  background: rgba(56, 187, 146, 0.12);
+  border-color: rgba(56, 187, 146, 0.65);
+  color: var(--tags);
+  transform: translateY(-2px);
 }
 
 .button:hover .arrow {
   transform: translate(3px, -3px);
 }
 
-.button:hover {
-  background-color: var(--main-bg);
-  cursor: pointer;
-  transform: translateY(-5px);
-  color: var(--tags);
-}
-
-.button:hover span {
-  filter: brightness(1.3);
+.button:active {
+  transform: scale(0.97);
+  background: rgba(56, 187, 146, 0.18);
 }
 
 .buttonA {
@@ -112,3 +124,4 @@
     width: 70%;
   }
 }
+

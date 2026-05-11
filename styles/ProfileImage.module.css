@@ -6,6 +6,7 @@
   border-radius: 10%;
   justify-content: center;
   display: flex;
+  left: -3rem;
 }
 
 .imageCard img {
@@ -44,6 +45,39 @@
   transform: translateY(-1.5rem);
   filter: brightness(0.8);
   opacity: 1;
+}
+
+.bare {
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+}
+
+.bare::before {
+  display: none;
+}
+
+.bare::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 0;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    transparent 38%,
+    var(--main-bg, #10172a) 72%
+  );
+}
+
+.bare .imgElement {
+  position: relative;
+  transform: none;
+  filter: none;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
 }
 
 @media screen and (max-width: 1330px) {

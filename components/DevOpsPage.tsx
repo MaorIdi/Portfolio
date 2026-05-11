@@ -109,6 +109,13 @@ const DevOpsPage = () => {
           </div>
         </div>
 
+        <a href="#contact" className={styles.floatingCTA} aria-label="Contact me">
+          <span className={styles.floatingCTAIcon}>
+            <i className="fa-solid fa-terminal"></i>
+          </span>
+          <span className={styles.floatingCTAText}>Let&apos;s Connect</span>
+        </a>
+
         <div className={styles.right}>
           <section className={styles.section} id="about">
             <h1>About me</h1>
