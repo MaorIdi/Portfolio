@@ -4,8 +4,8 @@ import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Maor Idi | Portfolio",
-  description: "Maor Idi business protfolio",
+  title: "Maor Idi | DevOps Engineer",
+  description: "Maor Idi — DevOps & Automation Engineer. Infrastructure, CI/CD, Python scripting.",
 };
 
 export default function RootLayout({

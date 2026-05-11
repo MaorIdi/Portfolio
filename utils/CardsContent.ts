@@ -5,6 +5,9 @@ export interface CardsContent {
   ghostSquawkv1: string;
   steamly: string;
   cheapSpotify: string;
+  qualitest: string;
+  freelanceDevOps: string;
+  idf: string;
 }
 
 export const CardsContent: CardsContent = {
@@ -43,4 +46,16 @@ export const CardsContent: CardsContent = {
   
     customers of the projects and create leads for the owner.`,
   cheapSpotify: `Just a side project of mine built in Next.js`,
+
+  qualitest: `QA & Automation Engineer on the Bank Hapoalim project at Qualitest.
+
+Engineered a comprehensive automation architecture from the ground up using OOP in Python. Automated 200+ complex test cases across Mobile Applications, Web UI, and REST API endpoints with Python and Appium — reclaiming critical engineering hours by eliminating manual testing bottlenecks and enabling concurrent execution.`,
+
+  freelanceDevOps: `Consolidated infrastructure and development services for Busy With AI, Kovach Technologies, and Ghost Squawk.
+
+Provisioned and maintained Ubuntu Linux server environments across cloud platforms. Built Python-based automation, monitoring, and logging scripts that significantly reduced manual administration overhead. Designed and integrated REST APIs for seamless backend service communication.`,
+
+  idf: `Communications Systems Technician in a Classified Air Force Command Unit.
+
+Designed two major efficiency proposals in a closed network, including an automated system to resolve IT issues without technician intervention. Built a diagnostic chatbot and real-time monitoring dashboard serving 500+ end-user stations — saving substantial budget and operational time. Administered Windows Servers and Active Directory for 1,000+ users nationwide in a 24/7 high-availability environment.`,
 };
