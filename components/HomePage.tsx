@@ -35,7 +35,6 @@ const HomePage = () => {
               <TechButton
                 title="Resume"
                 englishPath="/resume-english.pdf"
-                hebrewPath="/resume-hebrew.pdf"
               />
             </div>
 

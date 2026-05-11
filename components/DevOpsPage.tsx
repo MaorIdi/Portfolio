@@ -73,7 +73,6 @@ const DevOpsPage = () => {
               <TechButton
                 title="Resume"
                 englishPath="/resume-english.pdf"
-                hebrewPath="/resume-hebrew.pdf"
               />
             </div>
             <div className={styles.links}>
