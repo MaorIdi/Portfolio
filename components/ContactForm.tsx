@@ -56,7 +56,7 @@ const ContactForm = () => {
             required
             type="text"
             id="Fname"
-            placeholder="John Doe"
+            placeholder="Your full name"
             onChange={(e) => setFname(e.target.value)}
             value={Fname}
           />
@@ -68,7 +68,7 @@ const ContactForm = () => {
             required
             type="email"
             id="Gmail"
-            placeholder="john@example.com"
+            placeholder="your@email.com"
             value={Gmail}
             onChange={(e) => {
               setGmail(e.target.value);
@@ -81,7 +81,7 @@ const ContactForm = () => {
         <textarea
           required
           id="message"
-          placeholder="Please write down a job offer or a message here."
+          placeholder="Job offer, project inquiry, or just a message..."
           value={message}
           onChange={(e) => {
             setMessage(e.target.value);
