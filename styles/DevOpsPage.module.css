@@ -353,15 +353,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     text-align: center;
-    height: 100%;
+    height: auto;
   }
   .secondLeft {
     height: auto;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 2rem 0;
   }
   .left p {
     margin: 0;
+    padding-bottom: 0;
   }
   .firstLeft {
     display: flex;
