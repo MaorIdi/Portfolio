@@ -199,6 +199,51 @@
   font-weight: 400;
 }
 
+/* ── Projects ── */
+.sectionSubtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--tags);
+  font-weight: 600;
+  margin: 0.4rem 0 0 0;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.projectItem {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(56, 187, 146, 0.12);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: 150ms ease-in-out;
+}
+
+.projectItem:hover {
+  background: rgba(56, 187, 146, 0.04);
+  border-color: rgba(56, 187, 146, 0.28);
+}
+
+.projectTitle {
+  color: var(--text-bold);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 0.4rem 0;
+}
+
+.projectDescription {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+
 /* ── Education ── */
 .educationList {
   display: flex;

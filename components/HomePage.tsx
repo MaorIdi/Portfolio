@@ -34,7 +34,7 @@ const HomePage = () => {
             <div className={styles.techButton}>
               <TechButton
                 title="Resume"
-                englishPath="/resume-english.pdf"
+                englishPath="/Maor_Idi_DevOps_Engineer_Resume.pdf"
               />
             </div>
 

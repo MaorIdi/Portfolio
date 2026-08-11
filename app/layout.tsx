@@ -5,7 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Maor Idi | DevOps Engineer",
-  description: "Maor Idi — DevOps & Automation Engineer. Infrastructure, CI/CD, Python scripting.",
+  description:
+    "Maor Idi — DevOps & Platform Engineer. Linux, Docker, Kubernetes, Terraform, CI/CD, and Python automation.",
 };
 
 export default function RootLayout({

@@ -10,44 +10,59 @@ import { CardsContent } from "@/utils/CardsContent";
 
 const skillCategories = [
   {
-    title: "Infrastructure & OS",
-    skills: ["Linux (Ubuntu)", "Windows Server", "VMware", "Digital Ocean"],
+    title: "Infrastructure & Cloud",
+    skills: ["Linux (Ubuntu)", "Arch Linux", "DigitalOcean", "Windows Server", "AWS"],
   },
   {
-    title: "CI/CD, Cloud & DevOps",
-    skills: ["Docker", "Kubernetes (K8s)", "Terraform", "AWS", "Git / GitHub", "Monitoring Tools"],
+    title: "CI/CD & DevOps",
+    skills: ["Docker", "Kubernetes (K8s)", "Terraform", "OpenTofu", "Helm", "Jenkins", "Git"],
   },
   {
-    title: "Scripting & Languages",
-    skills: ["Python", "PowerShell", "Node.js", "TypeScript", "JavaScript", "SQL"],
+    title: "Languages & Scripting",
+    skills: ["Python", "Bash", "Node.js", "TypeScript", "JavaScript", "SQL"],
   },
   {
     title: "Automation & Testing",
-    skills: ["Appium", "Android Studio", "Xcode", "OOP Architectures"],
+    skills: ["Appium", "Selenium", "Pytest", "REST API Testing", "OOP Architectures (POM)"],
   },
   {
-    title: "Architecture & APIs",
-    skills: ["REST API Integration", "Active Directory", "MySQL"],
+    title: "GenAI & LLMs",
+    skills: ["LLM APIs (OpenAI, Claude)", "LangChain", "RAG Architectures", "AI Agents"],
+  },
+];
+
+const projectItems = [
+  {
+    title: "Cloud Provisioning & IaC",
+    description:
+      "Provisioned scalable cloud infrastructure on AWS utilizing Terraform to establish highly reproducible environments.",
+    tags: ["AWS", "Terraform", "OpenTofu"],
+  },
+  {
+    title: "Container Orchestration",
+    description:
+      "Containerized application environments using Docker and orchestrated deployments with Kubernetes (K8s) to manage microservices.",
+    tags: ["Docker", "Kubernetes", "Helm"],
+  },
+  {
+    title: "CI/CD Pipeline Design",
+    description:
+      "Built and maintained automated integration and deployment pipelines using Jenkins and Git to streamline the development lifecycle.",
+    tags: ["Jenkins", "Git", "Bash"],
   },
 ];
 
 const educationItems = [
   {
-    school: "John Bryce (By Matrix)",
+    school: "John Bryce Tel Aviv",
     degree: "DevOps Engineering Course · 605 hours",
     year: "DevOps",
     honor: true,
   },
   {
-    school: "Codecademy",
-    degree: "Node.js (2024)  ·  Python (2021)",
-    year: "Online",
-    honor: false,
-  },
-  {
-    school: "Holtz Air Force Technical School",
-    degree: "Electronics & Computer Science · 5 study units each",
-    year: "Military",
+    school: "Amal Holtz Multidisciplinary Air Force High School",
+    degree: "Electronics & Computer Science",
+    year: "School",
     honor: false,
   },
 ];
@@ -61,8 +76,8 @@ const DevOpsPage = () => {
         <div className={styles.left}>
           <div className={styles.firstLeft}>
             <h1>Maor Idi</h1>
-            <h2>DevOps & Automation Engineer</h2>
-            <p>Infrastructure · Automation · CI/CD</p>
+            <h2>DevOps & Platform Engineer</h2>
+            <p>Infrastructure · Containers · IaC · CI/CD</p>
           </div>
           <div className={styles.secondLeft}>
             <div className={styles.profileImage}>
@@ -72,7 +87,7 @@ const DevOpsPage = () => {
             <div className={styles.techButton}>
               <TechButton
                 title="Resume"
-                englishPath="/resume-english.pdf"
+                englishPath="/Maor_Idi_DevOps_Engineer_Resume.pdf"
               />
             </div>
             <div className={styles.links}>
@@ -120,22 +135,22 @@ const DevOpsPage = () => {
           <section className={styles.section} id="about">
             <h1>About me</h1>
             <div className={styles.description}>
-              Passionate <span>DevOps and Automation Engineer</span> with a
-              broad systemic vision and a proven ability to learn quickly.
-              Experienced in <span>Python scripting</span>,{" "}
+              Junior <span>DevOps & Platform Engineer</span> with a broad
+              systemic vision, strong technical aptitude, and a proven ability
+              to learn quickly. Experienced in <span>Python development</span>,{" "}
               <span>Linux server administration</span>, and building robust
-              automation architectures from scratch to eliminate manual
-              overhead.
+              automation architectures from scratch.
               <br />
               <br />
-              Adept at managing environments, configuring infrastructure, and
-              bridging the gap between{" "}
-              <span>testing, operations, and development</span>. Currently
-              delivering QA automation at <span>Qualitest</span> on the Bank
-              Hapoalim project — backed by freelance infrastructure experience
-              across cloud platforms and a strong{" "}
-              <span>military background</span> in high-availability systems
-              serving thousands of users nationwide.
+              Hands-on experience with <span>container orchestration</span>,{" "}
+              <span>infrastructure-as-code (IaC)</span>, and{" "}
+              <span>GenAI integrations</span>. Adept at bridging the gap between{" "}
+              <span>infrastructure, operations, and development</span> to
+              accelerate time-to-market and ensure system reliability.
+              Currently delivering QA automation at <span>Qualitest</span> on
+              the Bank Hapoalim project — backed by freelance infrastructure
+              experience and a <span>military background</span> in
+              high-availability systems serving thousands of users nationwide.
             </div>
           </section>
 
@@ -146,21 +161,21 @@ const DevOpsPage = () => {
                 <Card
                   title="Qualitest · Bank Hapoalim"
                   description={CardsContent.qualitest}
-                  tags={["Python", "Appium", "OOP", "REST API", "Mobile", "Web UI"]}
+                  tags={["Python", "Selenium", "Appium", "POM", "CI/CD", "GenAI"]}
                   date="Aug 2025 — Present"
                   linkTo="https://www.qualitest.com/"
                 />
                 <Card
                   title="Freelance Infrastructure Engineer"
                   description={CardsContent.freelanceDevOps}
-                  tags={["Ubuntu Linux", "Python", "REST API", "Cloud", "Monitoring"]}
+                  tags={["Linux", "DigitalOcean", "SSH", "Bash", "Python", "Networking"]}
                   date="Feb 2022 — Mar 2024"
                   linkTo="https://github.com/MaorIdi"
                 />
                 <Card
-                  title="IDF · Communications Systems"
+                  title="IDF Air Force · Communications Systems"
                   description={CardsContent.idf}
-                  tags={["Windows Server", "Active Directory", "Automation", "RF Systems", "VOIP"]}
+                  tags={["Windows Server", "Active Directory", "Automation", "Monitoring", "Chatbot"]}
                   date="Military Service"
                   linkTo="https://www.idf.il/"
                 />
@@ -182,6 +197,28 @@ const DevOpsPage = () => {
                     {cat.skills.map((skill) => (
                       <span key={skill} className={styles.skillTag}>
                         {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className={styles.section} id="projects">
+            <h1>DevOps Projects</h1>
+            <p className={styles.sectionSubtitle}>John Bryce Tel Aviv</p>
+            <div className={styles.projectsList}>
+              {projectItems.map((project) => (
+                <div key={project.title} className={styles.projectItem}>
+                  <p className={styles.projectTitle}>{project.title}</p>
+                  <p className={styles.projectDescription}>
+                    {project.description}
+                  </p>
+                  <div className={styles.skillTags}>
+                    {project.tags.map((tag) => (
+                      <span key={tag} className={styles.skillTag}>
+                        {tag}
                       </span>
                     ))}
                   </div>
