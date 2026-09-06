@@ -87,7 +87,7 @@ const DevOpsPage = () => {
             <div className={styles.techButton}>
               <TechButton
                 title="Resume"
-                englishPath="/Maor_Idi_DevOps_Engineer_Resume.pdf"
+                englishPath="/api/resume?file=devops"
               />
             </div>
             <div className={styles.links}>
