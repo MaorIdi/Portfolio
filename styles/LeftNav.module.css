@@ -18,6 +18,14 @@
   gap: 0.2rem;
 }
 
+.navbar li {
+  cursor: pointer;
+}
+
+.shortLabel {
+  display: none;
+}
+
 .active i {
   transition: 150ms ease-in-out;
   transform: scale(0.95);
@@ -53,7 +61,7 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    width: 94%;
+    width: 96%;
     max-width: 500px;
     z-index: 500;
     bottom: 1.4rem;
@@ -75,7 +83,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 4px;
+    padding: 13px 4px;
+    min-width: 0;
     cursor: pointer;
     border-right: 1px solid rgba(56, 187, 146, 0.12);
     transition: background 150ms ease;
@@ -90,9 +99,10 @@
     background: rgba(56, 187, 146, 0.1);
   }
   .navbar i {
-    font-size: 10.5px;
+    font-size: clamp(9px, 1.9vw, 12px);
     font-weight: 500;
     font-style: normal;
+    white-space: nowrap;
     letter-spacing: 0.03em;
     color: rgba(160, 178, 200, 0.55);
     transition: color 150ms ease;
@@ -122,5 +132,25 @@
   .active i {
     color: var(--tags, #38bb92) !important;
     font-weight: 600;
+  }
+}
+
+/* Phones: swap to short labels so every item fits on one row */
+@media only screen and (max-width: 620px) {
+  .navbar .fullLabel {
+    display: none;
+  }
+  .navbar .shortLabel {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .navbar > ul > li {
+    padding: 12px 2px;
+  }
+  .navbar i {
+    font-size: 8.5px;
+    letter-spacing: 0;
   }
 }

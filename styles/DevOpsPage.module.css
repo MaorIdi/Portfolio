@@ -424,7 +424,7 @@
     align-items: center;
     width: 100%;
     gap: 0;
-    padding: 0;
+    padding: 0 0 6rem 0;
   }
   .right {
     position: static;
@@ -436,7 +436,13 @@
     text-align: center;
   }
   .links {
-    display: none;
+    display: block;
+    font-size: 24px !important;
+  }
+  .links ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.2rem;
   }
   .profileImage {
     display: none;

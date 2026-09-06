@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 import styles from "@/styles/LeftNav.module.css";
 
 const sections = [
-  { id: "about", label: "ABOUT" },
-  { id: "experience", label: "EXPERIENCE" },
-  { id: "skills", label: "SKILLS" },
-  { id: "projects", label: "PROJECTS" },
-  { id: "education", label: "EDUCATION" },
-  { id: "contact", label: "CONTACT" },
+  { id: "about", label: "ABOUT", short: "ABOUT" },
+  { id: "experience", label: "EXPERIENCE", short: "WORK" },
+  { id: "skills", label: "SKILLS", short: "SKILLS" },
+  { id: "projects", label: "PROJECTS", short: "PROJ" },
+  { id: "education", label: "EDUCATION", short: "EDU" },
+  { id: "contact", label: "CONTACT", short: "CONTACT" },
 ];
 
 const DevOpsNav = () => {
@@ -44,9 +44,12 @@ const DevOpsNav = () => {
   return (
     <nav className={styles.navbar}>
       <ul>
-        {sections.map(({ id, label }) => (
+        {sections.map(({ id, label, short }) => (
           <li key={id} className={activeSection === id ? styles.active : ""} onClick={() => handleClick(id)}>
-            <i>{label}</i>
+            <i>
+              <span className={styles.fullLabel}>{label}</span>
+              <span className={styles.shortLabel}>{short}</span>
+            </i>
           </li>
         ))}
       </ul>

@@ -1,15 +1,22 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "@/styles/LeftNav.module.css";
+
+const sections = [
+  { id: "first", label: "ABOUT", short: "ABOUT" },
+  { id: "second", label: "EXPERIENCE", short: "WORK" },
+  { id: "third", label: "PROJECTS", short: "PROJ" },
+  { id: "fourth", label: "CONTACT", short: "CONTACT" },
+];
 
 const LeftNav = () => {
   const [activeSection, setActiveSection] = useState("first");
 
   const handleScroll = () => {
-    const sections = document.querySelectorAll("section");
+    const sectionEls = document.querySelectorAll("section");
     let current: string | null = null;
 
-    sections.forEach((section) => {
+    sectionEls.forEach((section) => {
       const sectionTop = section.offsetTop - 250;
 
       if (window.scrollY >= sectionTop) {
@@ -39,18 +46,14 @@ const LeftNav = () => {
   return (
     <nav className={styles.navbar}>
       <ul>
-        <li className={activeSection === "first" ? styles.active : ""}>
-          <i onClick={() => handleClick("first")}>ABOUT</i>
-        </li>
-        <li className={activeSection === "second" ? styles.active : ""}>
-          <i onClick={() => handleClick("second")}>EXPERIENCE</i>
-        </li>
-        <li className={activeSection === "third" ? styles.active : ""}>
-          <i onClick={() => handleClick("third")}>PROJECTS</i>
-        </li>
-        <li className={activeSection === "fourth" ? styles.active : ""}>
-          <i onClick={() => handleClick("fourth")}>CONTACT</i>
-        </li>
+        {sections.map(({ id, label, short }) => (
+          <li key={id} className={activeSection === id ? styles.active : ""} onClick={() => handleClick(id)}>
+            <i>
+              <span className={styles.fullLabel}>{label}</span>
+              <span className={styles.shortLabel}>{short}</span>
+            </i>
+          </li>
+        ))}
       </ul>
     </nav>
   );

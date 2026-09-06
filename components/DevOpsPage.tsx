@@ -103,7 +103,7 @@ const DevOpsPage = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/maor-idi-99326b215/"
+                    href="https://www.linkedin.com/in/maoridi/"
                     target="_blank"
                     aria-label="linkedin"
                   >
