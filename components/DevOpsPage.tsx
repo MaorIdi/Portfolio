@@ -33,21 +33,21 @@ const skillCategories = [
 
 const projectItems = [
   {
-    title: "Cloud Provisioning & IaC",
+    title: "Infrastructure as Code (IaC)",
     description:
-      "Provisioned scalable cloud infrastructure on AWS utilizing Terraform to establish highly reproducible environments.",
+      "Provisioned a highly available and scalable cloud network on AWS utilizing Terraform, ensuring a fully reproducible cloud environment.",
     tags: ["AWS", "Terraform", "OpenTofu"],
   },
   {
-    title: "Container Orchestration",
+    title: "Containerization & Orchestration",
     description:
-      "Containerized application environments using Docker and orchestrated deployments with Kubernetes (K8s) to manage microservices.",
+      "Packaged microservices utilizing Docker and orchestrated the deployment lifecycle across a Kubernetes (K8s) cluster, ensuring high availability and seamless load balancing.",
     tags: ["Docker", "Kubernetes", "Helm"],
   },
   {
-    title: "CI/CD Pipeline Design",
+    title: "CI/CD Automation",
     description:
-      "Built and maintained automated integration and deployment pipelines using Jenkins and Git to streamline the development lifecycle.",
+      "Engineered a fully automated integration and deployment pipeline utilizing Jenkins and Git, streamlining the code transition from development to the production cluster.",
     tags: ["Jenkins", "Git", "Bash"],
   },
 ];
@@ -55,7 +55,7 @@ const projectItems = [
 const educationItems = [
   {
     school: "John Bryce Tel Aviv",
-    degree: "DevOps Engineering Course · 605 hours",
+    degree: "DevOps Engineering Bootcamp",
     year: "DevOps",
     honor: true,
   },
@@ -76,8 +76,8 @@ const DevOpsPage = () => {
         <div className={styles.left}>
           <div className={styles.firstLeft}>
             <h1>Maor Idi</h1>
-            <h2>DevOps & Platform Engineer</h2>
-            <p>Infrastructure · Containers · IaC · CI/CD</p>
+            <h2>DevOps & Automation Engineer</h2>
+            <p>CI/CD · IaC · Containers · Automation</p>
           </div>
           <div className={styles.secondLeft}>
             <div className={styles.profileImage}>
@@ -135,22 +135,22 @@ const DevOpsPage = () => {
           <section className={styles.section} id="about">
             <h1>About me</h1>
             <div className={styles.description}>
-              Junior <span>DevOps & Platform Engineer</span> with a broad
-              systemic vision, strong technical aptitude, and a proven ability
-              to learn quickly. Experienced in <span>Python development</span>,{" "}
-              <span>Linux server administration</span>, and building robust
-              automation architectures from scratch.
+              <span>DevOps & Automation Engineer</span> with hands-on
+              experience building <span>CI/CD pipelines</span>, configuring{" "}
+              <span>cloud infrastructure</span>, and automating complex
+              environments. Proven ability to bridge development and operations
+              leveraging <span>Infrastructure as Code (IaC)</span> and{" "}
+              <span>container orchestration</span>.
               <br />
               <br />
-              Hands-on experience with <span>container orchestration</span>,{" "}
-              <span>infrastructure-as-code (IaC)</span>, and{" "}
-              <span>GenAI integrations</span>. Adept at bridging the gap between{" "}
-              <span>infrastructure, operations, and development</span> to
-              accelerate time-to-market and ensure system reliability.
-              Currently delivering QA automation at <span>Qualitest</span> on
-              the Bank Hapoalim project — backed by freelance infrastructure
-              experience and a <span>military background</span> in
-              high-availability systems serving thousands of users nationwide.
+              Strong background in <span>Linux administration</span>,{" "}
+              <span>Python development</span>, and integrating{" "}
+              <span>GenAI-driven architectures</span> to optimize workflows,
+              accelerate delivery times, and ensure system reliability.
+              Currently an automation engineer at <span>Qualitest</span> on the
+              Bank Hapoalim project — backed by freelance infrastructure work
+              and a <span>military background</span> in high-availability
+              systems serving thousands of users nationwide.
             </div>
           </section>
 
@@ -159,7 +159,7 @@ const DevOpsPage = () => {
               <h1>Experience</h1>
               <div className={styles.cardContainer}>
                 <Card
-                  title="Qualitest · Bank Hapoalim"
+                  title="Automation Engineer · Qualitest"
                   description={CardsContent.qualitest}
                   tags={["Python", "Selenium", "Appium", "POM", "CI/CD", "GenAI"]}
                   date="Aug 2025 — Present"
@@ -173,10 +173,10 @@ const DevOpsPage = () => {
                   linkTo="https://github.com/MaorIdi"
                 />
                 <Card
-                  title="IDF Air Force · Communications Systems"
+                  title="System Administrator · IDF Air Force"
                   description={CardsContent.idf}
                   tags={["Windows Server", "Active Directory", "Automation", "Monitoring", "Chatbot"]}
-                  date="Military Service"
+                  date="2019 — 2022"
                   linkTo="https://www.idf.il/"
                 />
               </div>
@@ -206,8 +206,11 @@ const DevOpsPage = () => {
           </section>
 
           <section className={styles.section} id="projects">
-            <h1>DevOps Projects</h1>
-            <p className={styles.sectionSubtitle}>John Bryce Tel Aviv</p>
+            <h1>DevOps & Cloud Projects</h1>
+            <p className={styles.sectionSubtitle}>
+              End-to-End Cloud-Native Infrastructure Deployment · Independent
+              Capstone Project
+            </p>
             <div className={styles.projectsList}>
               {projectItems.map((project) => (
                 <div key={project.title} className={styles.projectItem}>

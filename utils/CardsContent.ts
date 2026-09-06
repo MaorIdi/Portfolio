@@ -47,15 +47,15 @@ export const CardsContent: CardsContent = {
     customers of the projects and create leads for the owner.`,
   cheapSpotify: `Just a side project of mine built in Next.js`,
 
-  qualitest: `QA & QA Automation Tester on the Bank Hapoalim project at Qualitest.
+  qualitest: `Automation Engineer on the Bank Hapoalim project at Qualitest.
 
-Engineered a comprehensive mobile native Android automation architecture from the ground up, built on the Page Object Model (POM) for highly scalable testing frameworks. Automated 200+ complex test cases by driving the Python Selenium library against an Appium server environment, providing self-service test execution for developers. Integrated the suites directly into CI/CD pipelines to enable concurrent execution — shifting from local testing to automated infrastructure and accelerating time-to-market. Integrated Generative AI (LLM APIs, AI agents) into the development workflow, building AI-powered proxy tools and intelligent test orchestration systems.`,
+Engineered a comprehensive, highly scalable automation architecture from scratch utilizing Python and the Page Object Model (POM) for native mobile applications. Automated 200+ complex test cases by driving the Python Selenium library against an Appium server environment. Integrated automated test suites directly into CI/CD pipelines to enable concurrent execution, shifting from local testing to automated infrastructure. Configured and managed test environments with Appium and Selenium, providing self-service test execution for cross-functional development teams. Spearheaded the integration of LLM APIs and AI agents into the development workflow, building intelligent proxy tools to optimize test orchestration.`,
 
   freelanceDevOps: `Freelance infrastructure engineering for various clients — Busy With AI, Kovach Technologies, and Ghost Squawk.
 
 Administered and maintained backend services on a DigitalOcean Linux server environment, managing deployments and configuration via SSH. Managed network security and traffic routing, configuring open ports and firewall rules to ensure external service availability and secure access. Developed automation and logging scripts in Bash and Python to streamline server maintenance and monitor application uptime.`,
 
-  idf: `Communications Systems Tech & Advanced Computing in a classified IDF Air Force operational command unit.
+  idf: `System Administrator & Infrastructure Tech in a classified IDF Air Force unit.
 
-Designed automated systems for a closed network, including an IT self-service resolution system that eliminated technician intervention for common issues. Developed a diagnostic chatbot and real-time monitoring dashboard for system issues across 500+ end-user stations, saving substantial operational budget. Administered Windows Servers, Active Directory, and permissions for 1,000+ users nationwide in a 24/7 high-availability environment.`,
+Administered Windows Servers and Active Directory, managing permissions and access control for 1,000+ users nationwide in a 24/7 high-availability network. Designed automated self-service resolution systems for a closed network, drastically reducing manual technician interventions for common IT issues. Developed a diagnostic chatbot and real-time monitoring dashboard for tracking system health across 500+ endpoints, optimizing operational efficiency.`,
 };
