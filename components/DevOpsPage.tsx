@@ -67,13 +67,19 @@ const educationItems = [
   {
     school: "John Bryce (Matrix)",
     degree: "DevOps Engineering Program · 605 hours / 12 months",
-    year: "2025 — 2026",
+    year: "Mar 2025 — Mar 2026",
     honor: true,
   },
   {
     school: "Holtz Air Force Technical School",
     degree: "Electronics & Computer Science",
     year: "School",
+    honor: false,
+  },
+  {
+    school: "Languages",
+    degree: "Hebrew: Native · English: Fluent",
+    year: "Lang",
     honor: false,
   },
 ];
