@@ -6,6 +6,7 @@ export interface CardsContent {
   steamly: string;
   cheapSpotify: string;
   qualitest: string;
+  reserveDuty: string;
   freelanceDevOps: string;
   idf: string;
 }
@@ -47,15 +48,17 @@ export const CardsContent: CardsContent = {
     customers of the projects and create leads for the owner.`,
   cheapSpotify: `Just a side project of mine built in Next.js`,
 
-  qualitest: `Automation Engineer on the Bank Hapoalim project at Qualitest.
+  qualitest: `QA Automation Engineer at QualityAI (formerly Qualitest), on the Bank Hapoalim project.
 
-Engineered a comprehensive, highly scalable automation architecture from scratch utilizing Python and the Page Object Model (POM) for native mobile applications. Automated 200+ complex test cases by driving the Python Selenium library against an Appium server environment. Integrated automated test suites directly into CI/CD pipelines to enable concurrent execution, shifting from local testing to automated infrastructure. Configured and managed test environments with Appium and Selenium, providing self-service test execution for cross-functional development teams. Spearheaded the integration of LLM APIs and AI agents into the development workflow, building intelligent proxy tools to optimize test orchestration.`,
+Built a scalable Python/OOP automation architecture from scratch for native mobile and web applications and automated 200+ complex scenarios using Appium, Selenium, and REST APIs. Integrated automated suites into CI/CD workflows and built self-service execution for developers, enabling concurrent test runs on shared infrastructure. Built AI-assisted developer tooling with LLM APIs, including proxy and orchestration workflows for test automation.`,
 
-  freelanceDevOps: `Freelance infrastructure engineering for various clients — Busy With AI, Kovach Technologies, and Ghost Squawk.
+  reserveDuty: `Reserve duty in a classified operational unit of the IDF Air Force.`,
 
-Administered and maintained backend services on a DigitalOcean Linux server environment, managing deployments and configuration via SSH. Managed network security and traffic routing, configuring open ports and firewall rules to ensure external service availability and secure access. Developed automation and logging scripts in Bash and Python to streamline server maintenance and monitor application uptime.`,
+  freelanceDevOps: `Freelance infrastructure and automation engineering for various clients — Busy With AI, Kovach Technologies, and Ghost Squawk.
 
-  idf: `System Administrator & Infrastructure Tech in a classified IDF Air Force unit.
+Administered Ubuntu/Linux backend services on cloud-hosted servers, including deployments, SSH, networking, firewall rules, and service availability. Developed Python/Bash automation, monitoring, and logging scripts and integrated REST APIs between backend services.`,
 
-Administered Windows Servers and Active Directory, managing permissions and access control for 1,000+ users nationwide in a 24/7 high-availability network. Designed automated self-service resolution systems for a closed network, drastically reducing manual technician interventions for common IT issues. Developed a diagnostic chatbot and real-time monitoring dashboard for tracking system health across 500+ endpoints, optimizing operational efficiency.`,
+  idf: `Systems Administrator & Infrastructure Technician in a classified IDF Air Force operational unit, serving as a Team Leader.
+
+Administered Windows Server and Active Directory for 1,000+ users in a 24/7 high-availability environment. Built self-service IT automation and monitoring across 500+ endpoints. Supported RF, satellite, and VOIP/ROIP operational communications systems. Completed military service with high honors.`,
 };

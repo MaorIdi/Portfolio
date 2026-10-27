@@ -469,3 +469,30 @@
     flex: none;
   }
 }
+
+/* ── Project details ── */
+.projectLink {
+  display: inline-block;
+  color: var(--tags);
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0.5rem 0 0 0;
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
+
+.projectBullets {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0.75rem 0;
+  padding-left: 1.1rem;
+}
+
+.projectBullets li {
+  margin-bottom: 0.3rem;
+}

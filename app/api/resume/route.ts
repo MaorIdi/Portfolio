@@ -9,7 +9,8 @@ export const dynamic = "force-dynamic";
 
 // Only these files can be served, so `file` can never traverse the filesystem.
 const ALLOWED_FILES: Record<string, string> = {
-  devops: "Maor_Idi_Automation_DevOps_Resume.pdf",
+  devops: "Maor_Idi_Resume.pdf",
+  "devops-prev": "Maor_Idi_Automation_DevOps_Resume.pdf",
   "devops-old": "Maor_Idi_DevOps_Engineer_Resume.pdf",
   english: "resume-english.pdf",
   hebrew: "resume-hebrew.pdf",

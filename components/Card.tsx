@@ -9,6 +9,8 @@ type props = {
   tags: string[];
   date: string;
   linkTo: string;
+  // Sites that refuse to be framed (X-Frame-Options / frame-ancestors) open in a new tab instead of the popup.
+  openInNewTab?: boolean;
 };
 
 const Card = (props: props) => {
@@ -18,6 +20,10 @@ const Card = (props: props) => {
   const [showTimeoutMessage, setShowTimeoutMessage] = useState(false);
 
   const handleShowPopUp = () => {
+    if (props.openInNewTab) {
+      window.open(props.linkTo, "_blank", "noopener,noreferrer");
+      return;
+    }
     setShowPopUp(!showPopUp);
     if (!showPopUp) {
       setLoading(true); // Reset loading state when opening popup

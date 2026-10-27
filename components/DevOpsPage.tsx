@@ -10,57 +10,68 @@ import { CardsContent } from "@/utils/CardsContent";
 
 const skillCategories = [
   {
-    title: "Infrastructure & Cloud",
-    skills: ["Linux (Ubuntu)", "Arch Linux", "DigitalOcean", "Windows Server", "AWS"],
+    title: "DevOps & Cloud",
+    skills: ["AWS", "Docker", "Kubernetes (k3d)", "Helm", "Terraform", "OpenTofu"],
   },
   {
-    title: "CI/CD & DevOps",
-    skills: ["Docker", "Kubernetes (K8s)", "Terraform", "OpenTofu", "Helm", "Jenkins", "Git"],
+    title: "CI/CD & GitOps",
+    skills: ["GitHub Actions", "Argo CD", "Jenkins", "Git", "GHCR", "CI/CD Pipelines"],
   },
   {
-    title: "Languages & Scripting",
-    skills: ["Python", "Bash", "Node.js", "TypeScript", "JavaScript", "SQL"],
+    title: "Programming",
+    skills: ["Python", "Bash", "PowerShell", "JavaScript", "TypeScript", "Node.js", "SQL"],
   },
   {
-    title: "Automation & Testing",
-    skills: ["Appium", "Selenium", "Pytest", "REST API Testing", "OOP Architectures (POM)"],
+    title: "Systems",
+    skills: ["Linux", "Ubuntu", "Windows Server", "Active Directory", "Networking", "Nginx", "Cloudflare Tunnel"],
   },
   {
-    title: "GenAI & LLMs",
-    skills: ["LLM APIs (OpenAI, Claude)", "LangChain", "RAG Architectures", "AI Agents"],
+    title: "Backend & Data",
+    skills: ["REST APIs", "FastAPI", "PostgreSQL", "MySQL"],
+  },
+  {
+    title: "Automation & AI",
+    skills: ["Pytest", "Selenium", "Appium", "Playwright", "OOP/POM", "LLM APIs", "LangChain"],
   },
 ];
 
 const projectItems = [
   {
-    title: "Infrastructure as Code (IaC)",
-    description:
-      "Provisioned a highly available and scalable cloud network on AWS utilizing Terraform, ensuring a fully reproducible cloud environment.",
-    tags: ["AWS", "Terraform", "OpenTofu"],
+    title: "Yesh Avoda — Job Auto-Apply Web App",
+    meta: "Personal project · Self-hosted · 2026 — Present",
+    link: "https://yeshavoda.co.il/",
+    linkLabel: "yeshavoda.co.il",
+    bullets: [
+      "Built a web app that finds job openings and applies to them automatically, using Python (FastAPI), PostgreSQL, and Playwright.",
+      "Self-hosted on my home Linux server in a Kubernetes cluster (k3d), with separate pods for the website, background workers, and database.",
+      "Built a CI/CD pipeline with GitHub Actions that runs tests, builds the Docker image, and pushes it to GHCR.",
+      "Deployed with Argo CD (GitOps): every change merged to Git is synced to the cluster automatically.",
+      "Made it public with a Cloudflare Tunnel and Nginx Ingress, without opening ports on my home network.",
+      "Set up autoscaling (HPA), nightly database backups with a CronJob, and 300+ Pytest tests.",
+    ],
+    tags: ["Kubernetes", "Argo CD", "GitHub Actions", "Docker", "FastAPI", "PostgreSQL", "Cloudflare Tunnel"],
   },
   {
-    title: "Containerization & Orchestration",
-    description:
-      "Packaged microservices utilizing Docker and orchestrated the deployment lifecycle across a Kubernetes (K8s) cluster, ensuring high availability and seamless load balancing.",
-    tags: ["Docker", "Kubernetes", "Helm"],
-  },
-  {
-    title: "CI/CD Automation",
-    description:
-      "Engineered a fully automated integration and deployment pipeline utilizing Jenkins and Git, streamlining the code transition from development to the production cluster.",
-    tags: ["Jenkins", "Git", "Bash"],
+    title: "End-to-End Cloud-Native Infrastructure Deployment",
+    meta: "Independent / John Bryce Final Project",
+    bullets: [
+      "Provisioned AWS infrastructure with Terraform.",
+      "Containerized services with Docker and deployed workloads to Kubernetes.",
+      "Built a Jenkins/Git CI/CD pipeline.",
+    ],
+    tags: ["AWS", "Terraform", "Docker", "Kubernetes", "Jenkins"],
   },
 ];
 
 const educationItems = [
   {
-    school: "John Bryce Tel Aviv",
-    degree: "DevOps Engineering Bootcamp",
-    year: "DevOps",
+    school: "John Bryce (Matrix)",
+    degree: "DevOps Engineering Program · 605 hours / 12 months",
+    year: "2025 — 2026",
     honor: true,
   },
   {
-    school: "Amal Holtz Multidisciplinary Air Force High School",
+    school: "Holtz Air Force Technical School",
     degree: "Electronics & Computer Science",
     year: "School",
     honor: false,
@@ -76,8 +87,8 @@ const DevOpsPage = () => {
         <div className={styles.left}>
           <div className={styles.firstLeft}>
             <h1>Maor Idi</h1>
-            <h2>DevOps & Automation Engineer</h2>
-            <p>CI/CD · IaC · Containers · Automation</p>
+            <h2>Software & DevOps Engineer</h2>
+            <p>Automation · Kubernetes · CI/CD · GitOps</p>
           </div>
           <div className={styles.secondLeft}>
             <div className={styles.profileImage}>
@@ -135,22 +146,20 @@ const DevOpsPage = () => {
           <section className={styles.section} id="about">
             <h1>About me</h1>
             <div className={styles.description}>
-              <span>DevOps & Automation Engineer</span> with hands-on
-              experience building <span>CI/CD pipelines</span>, configuring{" "}
-              <span>cloud infrastructure</span>, and automating complex
-              environments. Proven ability to bridge development and operations
-              leveraging <span>Infrastructure as Code (IaC)</span> and{" "}
-              <span>container orchestration</span>.
+              <span>Software and infrastructure engineer</span> with hands-on
+              experience building <span>Python automation</span>,
+              administering <span>Linux and Windows</span> environments,
+              integrating <span>APIs</span>, and working with{" "}
+              <span>cloud-native DevOps tooling</span>.
               <br />
               <br />
-              Strong background in <span>Linux administration</span>,{" "}
-              <span>Python development</span>, and integrating{" "}
-              <span>GenAI-driven architectures</span> to optimize workflows,
-              accelerate delivery times, and ensure system reliability.
-              Currently an automation engineer at <span>Qualitest</span> on the
-              Bank Hapoalim project — backed by freelance infrastructure work
-              and a <span>military background</span> in high-availability
-              systems serving thousands of users nationwide.
+              Currently a <span>QA Automation Engineer</span> at{" "}
+              <span>QualityAI</span>, developing mobile and web test automation
+              and CI/CD integrations. Completed military service and a 12-month{" "}
+              <span>DevOps Engineering program</span> with high honors. Seeking{" "}
+              <span>DevOps, Backend, Platform, or Software Engineering</span>{" "}
+              roles focused on reliable automation, infrastructure, and software
+              systems.
             </div>
           </section>
 
@@ -159,25 +168,35 @@ const DevOpsPage = () => {
               <h1>Experience</h1>
               <div className={styles.cardContainer}>
                 <Card
-                  title="Automation Engineer · Qualitest"
+                  title="QA Automation Engineer · QualityAI"
                   description={CardsContent.qualitest}
-                  tags={["Python", "Selenium", "Appium", "POM", "CI/CD", "GenAI"]}
+                  tags={["Python", "Appium", "Selenium", "REST APIs", "CI/CD", "LLM APIs"]}
                   date="Aug 2025 — Present"
-                  linkTo="https://www.qualitest.com/"
+                  linkTo="https://www.quality-ai.com/"
                 />
                 <Card
-                  title="Freelance Infrastructure Engineer"
+                  title="Reserve Duty · IDF Air Force"
+                  description={CardsContent.reserveDuty}
+                  tags={["Classified Operational Unit"]}
+                  date="Mar 2024 — Mar 2025"
+                  linkTo="https://www.idf.il/"
+                  openInNewTab
+                />
+                <Card
+                  title="Freelance Infrastructure & Automation Engineer"
                   description={CardsContent.freelanceDevOps}
-                  tags={["Linux", "DigitalOcean", "SSH", "Bash", "Python", "Networking"]}
+                  tags={["Linux", "Ubuntu", "SSH", "Networking", "Bash", "Python", "REST APIs"]}
                   date="Feb 2022 — Mar 2024"
                   linkTo="https://github.com/MaorIdi"
+                  openInNewTab
                 />
                 <Card
-                  title="System Administrator · IDF Air Force"
+                  title="Systems Administrator · IDF Air Force"
                   description={CardsContent.idf}
-                  tags={["Windows Server", "Active Directory", "Automation", "Monitoring", "Chatbot"]}
+                  tags={["Windows Server", "Active Directory", "Automation", "Monitoring", "Team Lead"]}
                   date="2019 — 2022"
                   linkTo="https://www.idf.il/"
+                  openInNewTab
                 />
               </div>
             </div>
@@ -206,18 +225,28 @@ const DevOpsPage = () => {
           </section>
 
           <section className={styles.section} id="projects">
-            <h1>DevOps & Cloud Projects</h1>
-            <p className={styles.sectionSubtitle}>
-              End-to-End Cloud-Native Infrastructure Deployment · Independent
-              Capstone Project
-            </p>
+            <h1>DevOps Projects</h1>
             <div className={styles.projectsList}>
               {projectItems.map((project) => (
                 <div key={project.title} className={styles.projectItem}>
                   <p className={styles.projectTitle}>{project.title}</p>
-                  <p className={styles.projectDescription}>
-                    {project.description}
-                  </p>
+                  <p className={styles.sectionSubtitle}>{project.meta}</p>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.projectLink}
+                    >
+                      {project.linkLabel} ·{" "}
+                      <i className="fa-thin fa-arrow-up-right"></i>
+                    </a>
+                  )}
+                  <ul className={styles.projectBullets}>
+                    {project.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
                   <div className={styles.skillTags}>
                     {project.tags.map((tag) => (
                       <span key={tag} className={styles.skillTag}>
